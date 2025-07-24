@@ -225,11 +225,11 @@
         "collection": "",
         "products": [],
         "full_width": true,
-        "stack_products": false,
+        "stack_products": true,
         "show_progress_bar": false,
         "products_count": 2,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
+        "products_per_row_desktop": 2,
         "subheading": "",
         "title": "Nos solutions capillaires",
         "content": "",
@@ -242,6 +242,42 @@
         "heading_gradient": "",
         "product_card_background": "",
         "product_card_text_color": ""
+      }
+    },
+    "impact_text_qdpb6q": {
+      "type": "impact-text",
+      "blocks": {
+        "item_H3QCnc": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "content": "",
+            "button_text": "Voir nos poudres",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_H3QCnc"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "impact-text": {
@@ -862,6 +898,7 @@
     "scrolling-text",
     "collection-list",
     "featured-collection",
+    "impact_text_qdpb6q",
     "impact-text",
     "image-with-text-overlay",
     "media-grid",
