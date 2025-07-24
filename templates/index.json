@@ -329,6 +329,39 @@
         "background_gradient": ""
       }
     },
+    "rich_text_363tQ9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tx44e8": {
+          "type": "heading",
+          "settings": {
+            "text": "+ de 32 000 hommes",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_i9rbPt": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>ont vaincu la calvitie et ont retrouvé confiance en eux grâce à notre poudre capillaire</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tx44e8",
+        "richtext_i9rbPt"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "press": {
       "type": "press",
       "blocks": {
@@ -566,6 +599,7 @@
     "impact-text",
     "before-after-image",
     "media-grid",
+    "rich_text_363tQ9",
     "press",
     "multiple-images-with-text",
     "featured-product",
