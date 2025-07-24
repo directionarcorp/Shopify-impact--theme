@@ -273,8 +273,8 @@
       "settings": {
         "full_width": true,
         "subheading": "",
-        "title": "Before/after",
-        "content": "<p>Showcase your product benefit by using before/after image comparison.</p>",
+        "title": "AVANT/APRÈS",
+        "content": "",
         "before_image": "shopify://shop_images/Avant_apres_3_1_65b4481a-589d-4797-8e7e-068ee43e806c.webp",
         "after_image": "shopify://shop_images/avant_Apres_3_1.webp",
         "expand_image": false,
