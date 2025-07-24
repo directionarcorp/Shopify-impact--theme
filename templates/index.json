@@ -161,6 +161,30 @@
         "button_text_color": "#000000"
       }
     },
+    "before-after-image": {
+      "type": "before-after-image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "AVANT/APRÈS",
+        "content": "",
+        "before_image": "shopify://shop_images/Avant_apres_3_1_65b4481a-589d-4797-8e7e-068ee43e806c.webp",
+        "after_image": "shopify://shop_images/avant_Apres_3_1.webp",
+        "expand_image": false,
+        "text_position": "center",
+        "before_after_text_position": "bottom",
+        "before_text": "Before",
+        "after_text": "After",
+        "drag_initial_position": 50,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#ffffff",
+        "after_text_color": "#ffffff",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
     "media-grid": {
       "type": "media-grid",
       "blocks": {
@@ -266,30 +290,6 @@
         "mobile_row_height": 150,
         "background": "",
         "background_gradient": ""
-      }
-    },
-    "before-after-image": {
-      "type": "before-after-image",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "AVANT/APRÈS",
-        "content": "",
-        "before_image": "shopify://shop_images/Avant_apres_3_1_65b4481a-589d-4797-8e7e-068ee43e806c.webp",
-        "after_image": "shopify://shop_images/avant_Apres_3_1.webp",
-        "expand_image": false,
-        "text_position": "center",
-        "before_after_text_position": "bottom",
-        "before_text": "Before",
-        "after_text": "After",
-        "drag_initial_position": 50,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "before_text_color": "#ffffff",
-        "after_text_color": "#ffffff",
-        "drag_cursor_background": "#ffffff",
-        "drag_cursor_color": "#000000"
       }
     },
     "press": {
@@ -527,8 +527,8 @@
     "featured-collection",
     "impact_text_qdpb6q",
     "impact-text",
-    "media-grid",
     "before-after-image",
+    "media-grid",
     "press",
     "multiple-images-with-text",
     "featured-product",
