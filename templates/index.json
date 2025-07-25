@@ -379,9 +379,10 @@
         "16644243327ba53d2a-1": {
           "type": "quote",
           "settings": {
+            "logo": "shopify://shop_images/LOGO-GENERIQUE.png",
             "logo_width": 100,
             "author": "",
-            "content": "Or share content about your promotion, offers...",
+            "content": "Ce qu'il y a de mieux pour retrouvre confiance en soi en tant qu'homme",
             "show_rating": false,
             "rating": 4
           }
