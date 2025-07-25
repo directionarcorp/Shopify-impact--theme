@@ -410,7 +410,7 @@
         "item_MFUjDV": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/coifferu_avec_pot_de_poudre_1.webp",
+            "image": "shopify://shop_images/coiffeur_avec_pot_de_poudre_1.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "",
@@ -420,17 +420,28 @@
         "item_TDfy4a": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/coifferu_avec_pot_de_poudre_2_1.webp",
+            "image": "shopify://shop_images/coifferu_avec_pot_de_poudre_2.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "item_eXNP43": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/coiffeur_avec_pot_de_poudre_3.webp",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading",
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
         "item_MFUjDV",
-        "item_TDfy4a"
+        "item_TDfy4a",
+        "item_eXNP43"
       ],
       "name": "Images and text scrolling",
       "settings": {
