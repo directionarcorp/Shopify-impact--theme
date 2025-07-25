@@ -588,22 +588,8 @@
         "item_xQXn7c": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
-          }
-        },
-        "item_mPib6y": {
-          "type": "item",
-          "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
-          }
-        },
-        "item_YMP7m3": {
-          "type": "item",
-          "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Comment bien appliquer la poudre capillaire ?",
+            "content": "<p>Sur cheveux propres et bien secs, saupoudrez directement la poudre sur les zones clairsemées. Répartissez-la de manière uniforme en tapotant légèrement avec les doigts ou un applicateur adapté. Pour une tenue renforcée, vous pouvez terminer par une légère brume fixatrice. Le résultat est visible en quelques secondes seulement.</p>"
           }
         },
         "item_7p8C6t": {
@@ -621,8 +607,6 @@
         "166442457738b23caf-2",
         "item_cwPQpW",
         "item_xQXn7c",
-        "item_mPib6y",
-        "item_YMP7m3",
         "item_7p8C6t"
       ],
       "settings": {
