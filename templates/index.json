@@ -443,6 +443,48 @@
         "background_gradient": ""
       }
     },
+    "slideshow_xiUG3j": {
+      "type": "slideshow",
+      "blocks": {
+        "image_fgGaGz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Avantages_de_Namilka_Store_6a61665d-2221-42fa-a0ed-b2b3cf6d5b5b.webp",
+            "mobile_image": "shopify://shop_images/Avantages_de_Namilka_Store_aff7214d-b2b5-4b2f-a1a8-fb5cc97bdc7b.webp",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_fgGaGz"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
     "multiple-images-with-text": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -643,6 +685,7 @@
     "rich_text_363tQ9",
     "press",
     "media_grid_33eFy4",
+    "slideshow_xiUG3j",
     "multiple-images-with-text",
     "featured-product",
     "faq"
