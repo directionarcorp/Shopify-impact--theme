@@ -449,7 +449,6 @@
         "image_fgGaGz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Avantages_de_Namilka_Store_6a61665d-2221-42fa-a0ed-b2b3cf6d5b5b.webp",
             "mobile_image": "shopify://shop_images/Avantages_de_Namilka_Store_aff7214d-b2b5-4b2f-a1a8-fb5cc97bdc7b.webp",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
