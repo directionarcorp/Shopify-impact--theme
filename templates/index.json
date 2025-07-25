@@ -414,7 +414,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "",
-            "content": "<p><em><strong>\"Résultat testé et approuvé sur mes clients : une nouvelle allure, un nouveau mental. Les complexes ont disparu directement\"</strong></em></p>"
+            "content": "<h6><em><strong>\"Résultat testé et approuvé sur mes clients : une nouvelle allure, un nouveau mental. Les complexes ont disparu directement\"</strong></em></h6>"
           }
         },
         "item_TDfy4a": {
@@ -424,7 +424,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<h6><em><strong>À chaque application, c’est le même effet : mes clients n’en reviennent pas. C’est naturel, instantané, et ça tient toute la journée, même en cas de pluie ou de coup de chaud.</strong></em></h6>"
           }
         },
         "item_eXNP43": {
@@ -448,8 +448,8 @@
         "full_width": true,
         "stack_on_mobile": false,
         "show_counter": false,
-        "desktop_image_effect": "reveal",
-        "image_position": "end",
+        "desktop_image_effect": "fade",
+        "image_position": "start",
         "background": "",
         "background_gradient": "",
         "text_color": "",
