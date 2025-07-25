@@ -404,17 +404,46 @@
         "logo_item_border": ""
       }
     },
-    "custom_liquid_pdbeWJ": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
+    "images_with_text_scrolling_KTTMK4": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_MFUjDV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/coifferu_avec_pot_de_poudre_1.webp",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "item_TDfy4a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/coifferu_avec_pot_de_poudre_2_1.webp",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_MFUjDV",
+        "item_TDfy4a"
+      ],
+      "name": "Images and text scrolling",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "",
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "media_grid_33eFy4": {
@@ -570,7 +599,7 @@
     "media-grid",
     "rich_text_363tQ9",
     "press",
-    "custom_liquid_pdbeWJ",
+    "images_with_text_scrolling_KTTMK4",
     "media_grid_33eFy4",
     "custom_liquid_ayELGx",
     "custom_liquid_46DDEY",
