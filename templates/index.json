@@ -424,7 +424,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "",
-            "content": "<h6><em><strong>À chaque application, c’est le même effet : mes clients n’en reviennent pas. C’est naturel, instantané, et ça tient toute la journée, même en cas de pluie ou de coup de chaud.</strong></em></h6>"
+            "content": "<h6><em><strong>\"À chaque application, c’est le même effet : mes clients n’en reviennent pas. C’est naturel, instantané, et ça tient toute la journée, même en cas de pluie ou de coup de chaud\"</strong></em></h6>"
           }
         },
         "item_eXNP43": {
@@ -433,8 +433,8 @@
             "image": "shopify://shop_images/coiffeur_avec_pot_de_poudre_3.webp",
             "icon": "none",
             "icon_width": 48,
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "title": "",
+            "content": "<h6><em><strong>Le rendu est si réaliste que même ceux qui ont fait une greffe sont jaloux. Mes clients ne jurent plus que par ça</strong></em></h6>"
           }
         }
       },
