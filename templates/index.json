@@ -368,9 +368,10 @@
         "16644243327ba53d2a-0": {
           "type": "quote",
           "settings": {
+            "logo": "shopify://shop_images/elle_300xlogo.png",
             "logo_width": 100,
             "author": "",
-            "content": "Share info about what your customers say about your products.",
+            "content": "Le produit miracle dont on nous a énormément parlé",
             "show_rating": false,
             "rating": 4
           }
