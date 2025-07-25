@@ -404,6 +404,19 @@
         "logo_item_border": ""
       }
     },
+    "custom_liquid_pdbeWJ": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "media_grid_33eFy4": {
       "type": "media-grid",
       "blocks": {
@@ -436,7 +449,7 @@
       "name": "Media grid",
       "settings": {
         "full_width": true,
-        "reduce_width": false,
+        "reduce_width": true,
         "desktop_row_height": 290,
         "mobile_row_height": 150,
         "background": "",
@@ -483,6 +496,7 @@
       "block_order": [
         "richtext_fT4FGP"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -556,6 +570,7 @@
     "media-grid",
     "rich_text_363tQ9",
     "press",
+    "custom_liquid_pdbeWJ",
     "media_grid_33eFy4",
     "custom_liquid_ayELGx",
     "custom_liquid_46DDEY",
