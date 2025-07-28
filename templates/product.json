@@ -134,12 +134,44 @@
             "title": "Est-ce que c’est sans risque pour la peau ?",
             "content": "<p>La formule est douce et respectueuse du cuir chevelu. Composée à 99 % d’ingrédients d’origine naturelle, elle ne contient ni substances irritantes ni composants agressifs. Elle convient parfaitement aux peaux sensibles et peut être utilisée au quotidien sans inquiétude.</p>"
           }
+        },
+        "item_MWG4eP": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que ça tient vraiment longtemps ?",
+            "content": "<p>Oui, l'effet tient sans bouger du matin au soir, même en cas de chaleur, de sueur ou d’humidité. Une application suffit pour la journée, et un format de 15 g permet en moyenne une trentaine d’utilisations.</p>"
+          }
+        },
+        "item_4VMcJa": {
+          "type": "item",
+          "settings": {
+            "title": "Comment est-ce que fonctionne la poudre capillaire ?",
+            "content": "<p>Les fibres capillaires sont chargées électrostatiquement pour se fixer naturellement aux cheveux présents, même les plus fins ou clairs. Elles s’accrochent à la fibre capillaire et viennent combler les zones clairsemées en créant un effet de densité immédiat. Grâce à cette fixation naturelle, la tenue est optimale : rien ne bouge, même en cas de pluie, de sport ou de coup de vent.</p>"
+          }
+        },
+        "item_wN44ng": {
+          "type": "item",
+          "settings": {
+            "title": "Comment bien appliquer la poudre capillaire ?",
+            "content": "<p>Sur cheveux propres et bien secs, saupoudrez directement la poudre sur les zones clairsemées. Répartissez-la de manière uniforme en tapotant légèrement avec les doigts ou un applicateur adapté. Pour une tenue renforcée, vous pouvez terminer par une légère brume fixatrice. Le résultat est visible en quelques secondes seulement.</p>"
+          }
+        },
+        "item_fbjJXx": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont les délais de livraison et les conditions de retour ?",
+            "content": "<p>La livraison est gratuite et rapide ! Nous expédions les colis sous 24 à 48h, et la livraison se fait sous 6 à 8 jours ouvrés.</p><p>Si le produit ne vous convient pas, vous disposez d’un délai de 30 jours après réception pour effectuer un retour.</p>"
+          }
         }
       },
       "block_order": [
         "item_yCMgKp",
         "item_UdyUxc",
-        "item_AUycHM"
+        "item_AUycHM",
+        "item_MWG4eP",
+        "item_4VMcJa",
+        "item_wN44ng",
+        "item_fbjJXx"
       ],
       "name": "FAQ",
       "settings": {
