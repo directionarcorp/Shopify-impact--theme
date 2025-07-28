@@ -196,26 +196,23 @@
         "accordion_text_color": ""
       }
     },
-    "image_with_text_overlay_Twwm3C": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
+    "custom_liquid_zcrypk": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_image": "shopify://shop_images/ingredients_de_la_poudre_capillaire.webp",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"responsive-image-wrapper\">\n    \n\n    \n    <a href=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059\" target=\"_self\">\n      <img class=\"image-mobile lazy-image loaded\" src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059\" data-src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059\" data-srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 414w\" data-sizes=\"(max-width: 414px) 414px, 828px\" alt=\"\" width=\"1000\" height=\"1000\" loading=\"lazy\" decoding=\"async\" srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 414w\" sizes=\"(max-width: 414px) 414px, 828px\">\n      \n    </a>\n    \n  </div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     }
   },
   "order": [
     "main",
     "faq_BkgFKL",
-    "image_with_text_overlay_Twwm3C"
+    "custom_liquid_zcrypk"
   ]
 }
