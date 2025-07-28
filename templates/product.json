@@ -345,30 +345,6 @@
     "meditrust_tableau_UiURp3": {
       "type": "meditrust-tableau",
       "blocks": {
-        "list_item_LAtWnR": {
-          "type": "list_item",
-          "settings": {
-            "text": "Endormez-vous plus rapidement"
-          }
-        },
-        "list_item_VQHYJg": {
-          "type": "list_item",
-          "settings": {
-            "text": "Relaxation & Sommeil réparateur"
-          }
-        },
-        "list_item_HgyjyT": {
-          "type": "list_item",
-          "settings": {
-            "text": "Réveillez-vous reposé"
-          }
-        },
-        "list_item_cGm39z": {
-          "type": "list_item",
-          "settings": {
-            "text": "À base de plantes"
-          }
-        },
         "table_row_cRAQNE": {
           "type": "table_row",
           "settings": {
@@ -441,10 +417,6 @@
         }
       },
       "block_order": [
-        "list_item_LAtWnR",
-        "list_item_VQHYJg",
-        "list_item_HgyjyT",
-        "list_item_cGm39z",
         "table_row_cRAQNE",
         "table_row_FB8VTY",
         "table_row_d8bXMm",
@@ -509,7 +481,7 @@
         "table_border_thickness": 1,
         "table_heading_image_size": 100,
         "table_heading_image_size_mobile": 80,
-        "first_heading": "MEDITRUST",
+        "first_heading": "Namilka Store",
         "second_heading": "Autres Marques",
         "third_heading": "Troisième",
         "four_heading": "Quatrième",
