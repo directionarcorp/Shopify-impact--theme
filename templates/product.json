@@ -111,6 +111,59 @@
         "input_text_color": ""
       }
     },
+    "faq_BkgFKL": {
+      "type": "faq",
+      "blocks": {
+        "item_yCMgKp": {
+          "type": "item",
+          "settings": {
+            "title": "Qu'est-ce qu'une poudre capillaire ?",
+            "content": "<p>Notre poudre capillaire est une solution express pour densifier visuellement les cheveux clairsemés. Composée de fibres naturelles, souvent issues du coton, cette poudre s'accroche instantanément aux cheveux existants pour combler les zones dégarnies. En quelques secondes, elle donne l’illusion d’une chevelure plus dense, sans passer par la case greffe ou traitements médicaux.</p>"
+          }
+        },
+        "item_UdyUxc": {
+          "type": "item",
+          "settings": {
+            "title": "Et si je n’ai plus du tout de cheveux à certaines zones ?",
+            "content": "<p>Même quand le cuir chevelu paraît nu, il reste souvent un léger duvet ou des cheveux très fins invisibles à l’œil nu. Les fibres capillaires s’y fixent facilement et permettent de redonner du volume visuellement. Résultat : les zones clairsemées sont estompées, et la chevelure paraît plus fournie, même en cas de calvitie avancée.</p>"
+          }
+        },
+        "item_AUycHM": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que c’est sans risque pour la peau ?",
+            "content": "<p>La formule est douce et respectueuse du cuir chevelu. Composée à 99 % d’ingrédients d’origine naturelle, elle ne contient ni substances irritantes ni composants agressifs. Elle convient parfaitement aux peaux sensibles et peut être utilisée au quotidien sans inquiétude.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_yCMgKp",
+        "item_UdyUxc",
+        "item_AUycHM"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -132,10 +185,25 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "custom_liquid_V6bYtT": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "faq_BkgFKL",
+    "related-products",
+    "custom_liquid_V6bYtT"
   ]
 }
