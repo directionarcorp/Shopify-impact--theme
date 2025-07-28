@@ -456,7 +456,7 @@
         "list_text_size": 20,
         "list_text_size_mobile": 18,
         "list_text_height": 150,
-        "button": "ACHETER MAINTENANT",
+        "button": "",
         "button_url": "",
         "button_custom": false,
         "button_font": "josefin_sans_n4",
