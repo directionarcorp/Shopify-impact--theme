@@ -208,11 +208,116 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "media_grid_ctg6dp": {
+      "type": "media-grid",
+      "blocks": {
+        "image_dGQ8Rp": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_XRNLai": {
+          "type": "image",
+          "settings": {
+            "title": "Promote your products",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_6tjFQL": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_DVyrdX": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_dGQ8Rp",
+        "image_XRNLai",
+        "image_6tjFQL",
+        "image_DVyrdX"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
     }
   },
   "order": [
     "main",
     "faq_BkgFKL",
-    "custom_liquid_zcrypk"
+    "custom_liquid_zcrypk",
+    "media_grid_ctg6dp"
   ]
 }
