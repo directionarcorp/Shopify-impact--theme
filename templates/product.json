@@ -372,7 +372,7 @@
         "table_row_cRAQNE": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Dosage optimisé",
+            "row_heading": "100% naturel",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -386,7 +386,7 @@
         "table_row_FB8VTY": {
           "type": "table_row",
           "settings": {
-            "row_heading": "À base de plantes",
+            "row_heading": "Résultats visibles",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -400,7 +400,7 @@
         "table_row_d8bXMm": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Faible en sucre",
+            "row_heading": "Waterproof et anti-frottement",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -414,7 +414,7 @@
         "table_row_qj9dm6": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Ingrédients simples",
+            "row_heading": "Application rapide",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -428,21 +428,7 @@
         "table_row_bejxUi": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Testé par des tiers",
-            "first_column": "",
-            "first_column_icon": "check",
-            "second_column": "",
-            "second_column_icon": "cross",
-            "third_column": "",
-            "third_column_icon": "none",
-            "four_column": "",
-            "four_column_icon": "none"
-          }
-        },
-        "table_row_tjTPJj": {
-          "type": "table_row",
-          "settings": {
-            "row_heading": "Goût délicieux",
+            "row_heading": "Miroir intégré",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -463,8 +449,7 @@
         "table_row_FB8VTY",
         "table_row_d8bXMm",
         "table_row_qj9dm6",
-        "table_row_bejxUi",
-        "table_row_tjTPJj"
+        "table_row_bejxUi"
       ],
       "name": "Meditrust - Compare Table",
       "settings": {
