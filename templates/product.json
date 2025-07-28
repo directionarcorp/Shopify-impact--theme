@@ -511,7 +511,7 @@
         "table_heading_padding_vertical": 18,
         "table_heading_padding_vertical_mobile": 18,
         "table_row_padding_horizontal": 14,
-        "table_row_padding_horizontal_mobile": 14,
+        "table_row_padding_horizontal_mobile": 12,
         "table_row_padding_vertical": 16,
         "table_row_padding_vertical_mobile": 16,
         "table_row_heading_width_mobile": 66,
