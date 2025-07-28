@@ -376,7 +376,21 @@
         "table_row_d8bXMm": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Waterproof et anti-frottement",
+            "row_heading": "Waterproof",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_kjThyd": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Anti-frottement",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -420,6 +434,7 @@
         "table_row_cRAQNE",
         "table_row_FB8VTY",
         "table_row_d8bXMm",
+        "table_row_kjThyd",
         "table_row_qj9dm6",
         "table_row_bejxUi"
       ],
