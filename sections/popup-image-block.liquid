@@ -243,19 +243,23 @@ Compatible avec le thème Impact – Version améliorée
 }
 {% endschema %}
 <script>
+  function openPopup{{ section.id }}() {
+    document.getElementById("popup-overlay-{{ section.id }}").style.display = "flex";
+  }
+
+  function closePopup{{ section.id }}() {
+    document.getElementById("popup-overlay-{{ section.id }}").style.display = "none";
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
-    const dialog = document.getElementById("popup-image-{{ section.id }}");
+    const overlay = document.getElementById("popup-overlay-{{ section.id }}");
 
-    dialog?.addEventListener("click", function (event) {
-      const rect = event.target.getBoundingClientRect();
-
-      // Si on clique en dehors de .popup-inner, on ferme
-      const clickedOutside =
-        !event.target.closest(".popup-inner") && event.target === dialog;
-
-      if (clickedOutside) {
-        dialog.close();
-      }
-    });
+    if (overlay) {
+      overlay.addEventListener("click", function (event) {
+        if (!event.target.closest(".popup-inner")) {
+          closePopup{{ section.id }}();
+        }
+      });
+    }
   });
 </script>
