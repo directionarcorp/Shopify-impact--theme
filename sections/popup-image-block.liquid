@@ -13,31 +13,29 @@ Compatible avec le thème Impact – Version améliorée
     margin-bottom: {{ section.settings.margin_bottom }}px;
     --font-size-title: {{ section.settings.font_size_title }}px;
     --font-size-link: {{ section.settings.font_size_link }}px;
-  "
->
+  ">
+
+
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
   <button 
     class="popup-link-text" 
-    onclick="document.getElementById('popup-overlay-{{ section.id }}').classList.add('visible');" 
-    style="color: {{ section.settings.link_color }};"
-  >
+    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
+    style="color: {{ section.settings.link_color }};">
     {{ section.settings.text_line_2 }}
   </button>
 
-  <div id="popup-overlay-{{ section.id }}" class="popup-overlay">
-    <div class="popup-container">
-      <button class="popup-close" onclick="document.getElementById('popup-overlay-{{ section.id }}').classList.remove('visible')">×</button>
+  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie">
+    <div class="popup-inner">
+      <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close();">×</button>
       {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image agrandie" class="popup-image" loading="lazy" />
+        <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
       {% else %}
         <p>Aucune image sélectionnée</p>
       {% endif %}
     </div>
-  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie" style="display: none;">
-
+  </dialog>
 </div>
-
 
 <style>
 .custom-popup-section {
@@ -72,7 +70,7 @@ Compatible avec le thème Impact – Version améliorée
   border: none;
   padding: 0;
   background: transparent;
-  margin: 0;
+  margin: auto;
 }
 
 .popup-inner {
@@ -138,16 +136,6 @@ Compatible avec le thème Impact – Version améliorée
 }
 
 .popup-inner {
-  padding: 0;
-}
-.popup-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.popup-dialog[open] {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
   padding: 0;
 }
 
@@ -267,45 +255,5 @@ Compatible avec le thème Impact – Version améliorée
         dialog.close();
       }
     });
-  });
-</script>
-<script>
-  // Polyfill pour dialog si non supporté
-  document.addEventListener("DOMContentLoaded", function () {
-    const dialog = document.getElementById("popup-image-{{ section.id }}");
-
-    if (dialog && typeof dialog.showModal !== "function") {
-      dialog.setAttribute("open", true); // fallback
-      dialog.querySelector('.popup-close')?.addEventListener("click", () => {
-        dialog.removeAttribute("open");
-      });
-    }
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const dialog = document.getElementById("popup-image-{{ section.id }}");
-    const trigger = document.querySelector(".popup-link-text");
-
-    if (dialog && typeof dialog.showModal === "function") {
-      dialog.style.display = "none";
-
-      trigger.addEventListener("click", function () {
-        dialog.style.display = "block";
-        dialog.showModal();
-      });
-
-      dialog.addEventListener("close", function () {
-        dialog.style.display = "none";
-      });
-
-      dialog.addEventListener("click", function (event) {
-        if (!event.target.closest(".popup-inner")) {
-          dialog.close();
-        }
-      });
-    } else {
-      console.warn("Le navigateur ne supporte pas <dialog>.");
-    }
   });
 </script>
