@@ -20,14 +20,14 @@ Compatible avec le thème Impact – Version améliorée
 
   <button 
     class="popup-link-text" 
-    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
+    onclick="document.getElementById('popup-image-{{ block.id }}').showModal();" 
     style="color: {{ block.settings.link_color }};">
     {{ block.settings.text_line_2 }}
   </button>
 
-  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie">
+  <dialog id="popup-image-{{ block.id }}" class="popup-dialog" aria-label="Image agrandie">
     <div class="popup-inner">
-      <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close();">×</button>
+      <button class="popup-close" onclick="document.getElementById('popup-image-{{ block.id }}').close();">×</button>
       {% if block.settings.image != blank %}
         <img src="{{ block.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
       {% else %}
@@ -122,7 +122,7 @@ Compatible avec le thème Impact – Version améliorée
     font-size: 0.95rem;
   }
 }
-  #shopify-section-{{ section.id }}.section {
+  #shopify-section-{{ block.id }}.section {
   padding-top: {{ block.settings.margin_top }}px !important;
   padding-bottom: {{ block.settings.margin_bottom }}px !important;
 }
@@ -144,7 +144,7 @@ Compatible avec le thème Impact – Version améliorée
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const dialog = document.getElementById("popup-image-{{ section.id }}");
+    const dialog = document.getElementById("popup-image-{{ block.id }}");
 
     dialog?.addEventListener("click", function (event) {
       const rect = event.target.getBoundingClientRect();
