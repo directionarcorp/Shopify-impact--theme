@@ -82,6 +82,7 @@
           "settings": {
             "text_line_1": "Voici une phrase descriptive",
             "text_line_2": "Cliquez ici pour afficher l’image",
+            "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
             "link_color": "#007acc",
             "background_color": "#f8f8f8",
             "border_radius": 12,
