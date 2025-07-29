@@ -1,263 +1,259 @@
 {% comment %}
-Section personnalisée Shopify : Texte + lien cliquable ouvrant une image responsive dans une popup
-Compatibilité totale mobile + desktop. Thème Impact.
+Section Shopify personnalisée : Texte + lien cliquable ouvrant une image en lightbox
+Compatible avec le thème Impact – Version améliorée
 {% endcomment %}
 
-<div class="custom-popup-section" style="
-  background-color: {{ section.settings.background_color }};
-  padding: {{ section.settings.padding }}px;
-  margin-top: {{ section.settings.margin_top }}px;
-  margin-bottom: {{ section.settings.margin_bottom }}px;
-  border-radius: {{ section.settings.border_radius }}px;
-  --font-size-title: {{ section.settings.font_size_title }}px;
-  --font-size-link: {{ section.settings.font_size_link }}px;
-">
-  <p style="font-size: var(--font-size-title); margin: 0;">
-    {{ section.settings.text }}
-  </p>
-  <p style="font-size: var(--font-size-link); margin: 8px 0 0;">
-    <a href="#" class="open-popup-link" style="text-decoration: underline;">
-      {{ section.settings.link_text }}
-    </a>
-  </p>
+<div 
+  class="custom-popup-section" 
+  style="
+    background-color: {{ section.settings.background_color }};
+    border-radius: {{ section.settings.border_radius }}px;
+    padding: {{ section.settings.padding }}px;
+    margin-top: {{ section.settings.margin_top }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
+    --font-size-title: {{ section.settings.font_size_title }}px;
+    --font-size-link: {{ section.settings.font_size_link }}px;
+  ">
 
-  <!-- Popup -->
-  <div class="popup-overlay" style="display: none;">
-    <div class="popup-content">
-      <button class="popup-close" aria-label="Fermer">&times;</button>
-      <img src="{{ section.settings.popup_image | image_url: width: 1200 }}" alt="Popup Image" />
+
+  <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
+
+  <button 
+    class="popup-link-text" 
+    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
+    style="color: {{ section.settings.link_color }};">
+    {{ section.settings.text_line_2 }}
+  </button>
+
+  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie">
+    <div class="popup-inner">
+      <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close();">×</button>
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
+      {% else %}
+        <p>Aucune image sélectionnée</p>
+      {% endif %}
     </div>
-  </div>
+  </dialog>
 </div>
-
-
-<!-- Popup DETACHEE du layout -->
-<div class="popup-overlay" style="display: none;">
-  <div class="popup-content">
-    <button class="popup-close" aria-label="Fermer">&times;</button>
-    <img src="{{ section.settings.popup_image | image_url: width: 1200 }}" alt="Popup Image" />
-  </div>
-</div>
-
-
 
 <style>
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.65);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  padding: 20px;
+.custom-popup-section {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.popup-content {
+.popup-title-text {
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.popup-link-text {
+  font-size: var(--font-size-link);
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.popup-link-text:hover {
+  opacity: 0.8;
+}
+
+.popup-dialog {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  padding: 0;
+  background: transparent;
+  margin: auto;
+}
+
+.popup-inner {
+  background: transparent;
+  padding: 0;
   position: relative;
+  text-align: center;
+  display: inline-block; /* Pour que la croix suive la taille de l'image */
+}
+
+
+.popup-image {
   max-width: 90vw;
   max-height: 90vh;
-  border-radius: 12px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  width: auto;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
+  position: relative;
 }
 
-.popup-content img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 12px;
-}
 
 .popup-close {
   position: absolute;
-  top: 10px;
-  right: 14px;
+  top: 0.5rem;
+  right: 0.5rem;
   background: none;
   border: none;
-  font-size: 2rem;
-  color: white;
+  font-size: 1.8rem;
+  color: #000;
   cursor: pointer;
-  z-index: 1001;
-}
-  <style>
-/* Important : éviter toute perturbation du layout principal */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.65);
-  display: none; /* par défaut masqué */
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  padding: 20px;
+  z-index: 10;
+  line-height: 1;
 }
 
-/* Réapparaît au clic */
-.popup-overlay.active {
-  display: flex;
+
+.popup-close:hover {
+  color: #ccc;
 }
 
-.popup-content {
-  position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
-  border-radius: 12px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+@media (max-width: 768px) {
+  .popup-title-text {
+    font-size: 1rem;
+  }
+
+  .popup-link-text {
+    font-size: 0.95rem;
+  }
+}
+  #shopify-section-{{ section.id }}.section {
+  padding-top: {{ section.settings.margin_top }}px !important;
+  padding-bottom: {{ section.settings.margin_bottom }}px !important;
+}
+.custom-popup-section * {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.popup-content img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 12px;
+.popup-title-text {
+  margin-bottom: 0.3rem;
 }
 
-.popup-close {
-  position: absolute;
-  top: 10px;
-  right: 14px;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  z-index: 1001;
+.popup-inner {
+  padding: 0;
 }
-</style>
 
 </style>
 
 {% schema %}
 {
-  "name": "Popup image + lien",
+  "name": "Popup image cliquable",
+  "tag": "section",
+  "class": "section",
   "settings": [
     {
       "type": "text",
-      "id": "text",
-      "label": "Texte principal",
-      "default": "Texte informatif"
+      "id": "text_line_1",
+      "label": "Texte non cliquable",
+      "default": "Voici une phrase descriptive"
     },
     {
       "type": "text",
-      "id": "link_text",
-      "label": "Texte du lien",
-      "default": "Voir l’image"
+      "id": "text_line_2",
+      "label": "Texte cliquable (ouvre l’image)",
+      "default": "Cliquez ici pour afficher l’image"
     },
     {
       "type": "image_picker",
-      "id": "popup_image",
-      "label": "Image à afficher dans la popup"
+      "id": "image",
+      "label": "Image à afficher"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Couleur du texte cliquable",
+      "default": "#007acc"
     },
     {
       "type": "color",
       "id": "background_color",
-      "label": "Couleur de fond",
-      "default": "#ffffff"
-    },
-    {
-      "type": "range",
-      "id": "font_size_title",
-      "min": 12,
-      "max": 48,
-      "step": 1,
-      "unit": "px",
-      "label": "Taille du texte principal",
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "font_size_link",
-      "min": 12,
-      "max": 36,
-      "step": 1,
-      "unit": "px",
-      "label": "Taille du texte du lien",
-      "default": 16
-    },
-    {
-      "type": "range",
-      "id": "padding",
-      "min": 0,
-      "max": 60,
-      "step": 4,
-      "unit": "px",
-      "label": "Padding interne",
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "margin_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Marge au-dessus",
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "margin_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Marge en dessous",
-      "default": 20
+      "label": "Couleur de fond du cadre",
+      "default": "#f8f8f8"
     },
     {
       "type": "range",
       "id": "border_radius",
+      "label": "Arrondi des bords (px)",
       "min": 0,
       "max": 30,
       "step": 2,
-      "unit": "px",
-      "label": "Arrondi des coins",
-      "default": 8
-    }
+      "default": 12
+    },
+    {
+  "type": "range",
+  "id": "padding",
+  "label": "Espacement intérieur (px)",
+  "min": 0,
+  "max": 60,
+  "step": 1,
+  "default": 20
+},
+    {
+  "type": "range",
+  "id": "font_size_title",
+  "label": "Taille du texte (ligne 1)",
+  "min": 12,
+  "max": 30,
+  "step": 1,
+  "default": 18
+},
+{
+  "type": "range",
+  "id": "font_size_link",
+  "label": "Taille du texte cliquable (ligne 2)",
+  "min": 12,
+  "max": 30,
+  "step": 1,
+  "default": 16
+},
+{
+  "type": "range",
+  "id": "margin_top",
+  "label": "Marge au-dessus de la section (px)",
+  "min": 0,
+  "max": 100,
+  "step": 5,
+  "default": 20
+},
+{
+  "type": "range",
+  "id": "margin_bottom",
+  "label": "Marge en dessous de la section (px)",
+  "min": 0,
+  "max": 100,
+  "step": 5,
+  "default": 20
+}
+
   ],
   "presets": [
     {
-      "name": "Texte + Image popup"
+      "name": "Bloc avec image popup",
+      "category": "Personnalisé"
     }
   ]
 }
 {% endschema %}
-
-
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const trigger = document.querySelector('.open-popup-link');
-  const popup = document.querySelector('.popup-overlay');
-  const closeBtn = document.querySelector('.popup-close');
+  document.addEventListener("DOMContentLoaded", function () {
+    const dialog = document.getElementById("popup-image-{{ section.id }}");
 
-  if (trigger && popup && closeBtn) {
-    trigger.addEventListener('click', function (e) {
-      e.preventDefault();
-      popup.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
+    dialog?.addEventListener("click", function (event) {
+      const rect = event.target.getBoundingClientRect();
 
-    closeBtn.addEventListener('click', function () {
-      popup.classList.remove('active');
-      document.body.style.overflow = '';
-    });
+      // Si on clique en dehors de .popup-inner, on ferme
+      const clickedOutside =
+        !event.target.closest(".popup-inner") && event.target === dialog;
 
-    popup.addEventListener('click', function (e) {
-      if (e.target === popup) {
-        popup.classList.remove('active');
-        document.body.style.overflow = '';
+      if (clickedOutside) {
+        dialog.close();
       }
     });
-  }
-});
+  });
 </script>
