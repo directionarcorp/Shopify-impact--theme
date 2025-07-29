@@ -118,7 +118,11 @@
         "link_color": "#1a1a1a",
         "background_color": "#f8f8f8",
         "border_radius": 12,
-        "padding": 10
+        "padding": 10,
+        "font_size_title": 18,
+        "font_size_link": 16,
+        "margin_top": 0,
+        "margin_bottom": 0
       }
     },
     "faq_BkgFKL": {
