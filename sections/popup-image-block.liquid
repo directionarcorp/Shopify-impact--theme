@@ -257,3 +257,16 @@ Compatible avec le thème Impact – Version améliorée
     });
   });
 </script>
+<script>
+  // Polyfill pour dialog si non supporté
+  document.addEventListener("DOMContentLoaded", function () {
+    const dialog = document.getElementById("popup-image-{{ section.id }}");
+
+    if (dialog && typeof dialog.showModal !== "function") {
+      dialog.setAttribute("open", true); // fallback
+      dialog.querySelector('.popup-close')?.addEventListener("click", () => {
+        dialog.removeAttribute("open");
+      });
+    }
+  });
+</script>
