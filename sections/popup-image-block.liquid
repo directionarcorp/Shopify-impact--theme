@@ -1,6 +1,6 @@
 {% comment %}
 Section Shopify personnalisée : Texte + lien cliquable ouvrant une image en lightbox
-Compatible avec le thème Impact – Version améliorée
+Compatible avec le thème Impact – version finale optimisée
 {% endcomment %}
 
 <div 
@@ -14,7 +14,6 @@ Compatible avec le thème Impact – Version améliorée
     --font-size-title: {{ section.settings.font_size_title }}px;
     --font-size-link: {{ section.settings.font_size_link }}px;
   ">
-
 
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
@@ -42,13 +41,21 @@ Compatible avec le thème Impact – Version améliorée
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.custom-popup-section * {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .popup-title-text {
   font-size: var(--font-size-title);
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .popup-link-text {
@@ -67,33 +74,28 @@ Compatible avec le thème Impact – Version améliorée
 .popup-dialog {
   width: 100%;
   max-width: 100%;
-  border: none;
+  border: none !important;
+  background: transparent !important;
   padding: 0;
-  background: transparent;
-  margin: auto;
+  margin: 0;
 }
 
 .popup-inner {
-  background: transparent;
-  padding: 0;
+  background: transparent !important;
+  padding: 0 !important;
   position: relative;
   text-align: center;
-  display: inline-block; /* Pour que la croix suive la taille de l'image */
+  display: inline-block;
 }
-
 
 .popup-image {
   max-width: 90vw;
   max-height: 90vh;
   width: auto;
   height: auto;
-  border: none;
-  border-radius: 0;
   display: block;
   margin: 0 auto;
-  position: relative;
 }
-
 
 .popup-close {
   position: absolute;
@@ -101,45 +103,38 @@ Compatible avec le thème Impact – Version améliorée
   right: 0.5rem;
   background: none;
   border: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #000;
   cursor: pointer;
   z-index: 10;
   line-height: 1;
 }
 
-
 .popup-close:hover {
-  color: #ccc;
+  color: #888;
 }
 
 @media (max-width: 768px) {
   .popup-title-text {
     font-size: 1rem;
   }
-
   .popup-link-text {
     font-size: 0.95rem;
   }
 }
-  #shopify-section-{{ section.id }}.section {
-  padding-top: {{ section.settings.margin_top }}px !important;
-  padding-bottom: {{ section.settings.margin_bottom }}px !important;
-}
-.custom-popup-section * {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.popup-title-text {
-  margin-bottom: 0.3rem;
-}
-
-.popup-inner {
-  padding: 0;
-}
-
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dialog = document.getElementById("popup-image-{{ section.id }}");
+
+    dialog?.addEventListener("click", function (event) {
+      if (!event.target.closest(".popup-inner")) {
+        dialog.close();
+      }
+    });
+  });
+</script>
 
 {% schema %}
 {
@@ -186,51 +181,50 @@ Compatible avec le thème Impact – Version améliorée
       "default": 12
     },
     {
-  "type": "range",
-  "id": "padding",
-  "label": "Espacement intérieur (px)",
-  "min": 0,
-  "max": 60,
-  "step": 1,
-  "default": 20
-},
+      "type": "range",
+      "id": "padding",
+      "label": "Espacement intérieur (px)",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 20
+    },
     {
-  "type": "range",
-  "id": "font_size_title",
-  "label": "Taille du texte (ligne 1)",
-  "min": 12,
-  "max": 30,
-  "step": 1,
-  "default": 18
-},
-{
-  "type": "range",
-  "id": "font_size_link",
-  "label": "Taille du texte cliquable (ligne 2)",
-  "min": 12,
-  "max": 30,
-  "step": 1,
-  "default": 16
-},
-{
-  "type": "range",
-  "id": "margin_top",
-  "label": "Marge au-dessus de la section (px)",
-  "min": 0,
-  "max": 100,
-  "step": 5,
-  "default": 20
-},
-{
-  "type": "range",
-  "id": "margin_bottom",
-  "label": "Marge en dessous de la section (px)",
-  "min": 0,
-  "max": 100,
-  "step": 5,
-  "default": 20
-}
-
+      "type": "range",
+      "id": "font_size_title",
+      "label": "Taille du texte (ligne 1)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "font_size_link",
+      "label": "Taille du texte cliquable (ligne 2)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Marge au-dessus de la section (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Marge en dessous de la section (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    }
   ],
   "presets": [
     {
@@ -240,20 +234,3 @@ Compatible avec le thème Impact – Version améliorée
   ]
 }
 {% endschema %}
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const dialog = document.getElementById("popup-image-{{ section.id }}");
-
-    dialog?.addEventListener("click", function (event) {
-      const rect = event.target.getBoundingClientRect();
-
-      // Si on clique en dehors de .popup-inner, on ferme
-      const clickedOutside =
-        !event.target.closest(".popup-inner") && event.target === dialog;
-
-      if (clickedOutside) {
-        dialog.close();
-      }
-    });
-  });
-</script>
