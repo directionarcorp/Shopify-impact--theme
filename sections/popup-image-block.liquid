@@ -253,7 +253,36 @@ Compatible avec le thème Impact – Version améliorée
 
       if (clickedOutside) {
         dialog.close();
+      document.addEventListener("DOMContentLoaded", function () {
+    const dialog = document.querySelector("dialog");
+    const trigger = document.querySelector(".open-popup-link");
+    const close = document.querySelector(".popup-close");
+
+    if (!dialog || !trigger) return;
+
+    // Vérifie que dialog et showModal sont supportés
+    const supportsDialog = typeof HTMLDialogElement === "function" && typeof dialog.showModal === "function";
+
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      if (supportsDialog) {
+        dialog.showModal();
+      } else {
+        dialog.setAttribute("open", "open"); // fallback pour navigateurs non supportés
+        dialog.style.display = "block";
       }
     });
+
+    if (close) {
+      close.addEventListener("click", function () {
+        if (supportsDialog) {
+          dialog.close();
+        } else {
+          dialog.removeAttribute("open");
+          dialog.style.display = "none";
+        }
+      });
+    }
   });
 </script>
