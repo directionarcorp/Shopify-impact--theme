@@ -1,3 +1,8 @@
+{% comment %}
+Section Shopify personnalisée : Texte + lien cliquable ouvrant une image en lightbox
+Compatible avec le thème Impact – Version améliorée
+{% endcomment %}
+
 <div 
   class="custom-popup-section" 
   style="
@@ -10,25 +15,26 @@
     --font-size-link: {{ section.settings.font_size_link }}px;
   ">
 
+
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
   <button 
     class="popup-link-text" 
-    onclick="openPopup{{ section.id }}()" 
+    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
     style="color: {{ section.settings.link_color }};">
     {{ section.settings.text_line_2 }}
   </button>
 
-  <div id="popup-overlay-{{ section.id }}" class="popup-overlay">
+  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie">
     <div class="popup-inner">
-      <button class="popup-close" onclick="closePopup{{ section.id }}()">×</button>
+      <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close();">×</button>
       {% if section.settings.image != blank %}
         <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
       {% else %}
         <p>Aucune image sélectionnée</p>
       {% endif %}
     </div>
-  </div>
+  </dialog>
 </div>
 
 <style>
@@ -58,82 +64,195 @@
   opacity: 0.8;
 }
 
-/* Overlay */
-.popup-overlay {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.6);
-  justify-content: center;
-  align-items: center;
+.popup-dialog {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  padding: 0;
+  background: transparent;
+  margin: auto;
 }
 
-.popup-overlay.active {
-  display: flex;
-}
-
-/* Inner popup */
 .popup-inner {
+  background: transparent;
+  padding: 0;
   position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  display: inline-block; /* Pour que la croix suive la taille de l'image */
 }
+
 
 .popup-image {
-  max-width: 100%;
+  max-width: 90vw;
   max-height: 90vh;
-  display: block;
+  width: auto;
+  height: auto;
   border: none;
   border-radius: 0;
+  display: block;
+  margin: 0 auto;
+  position: relative;
 }
 
-/* Close button */
+
 .popup-close {
   position: absolute;
-  top: -1rem;
-  right: -1rem;
-  background: white;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
   border: none;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  font-size: 1.5rem;
-  color: black;
+  font-size: 1.8rem;
+  color: #000;
   cursor: pointer;
   z-index: 10;
+  line-height: 1;
 }
+
 
 .popup-close:hover {
-  background: #f0f0f0;
+  color: #ccc;
 }
 
-#shopify-section-{{ section.id }}.section {
+@media (max-width: 768px) {
+  .popup-title-text {
+    font-size: 1rem;
+  }
+
+  .popup-link-text {
+    font-size: 0.95rem;
+  }
+}
+  #shopify-section-{{ section.id }}.section {
   padding-top: {{ section.settings.margin_top }}px !important;
   padding-bottom: {{ section.settings.margin_bottom }}px !important;
 }
+.custom-popup-section * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popup-title-text {
+  margin-bottom: 0.3rem;
+}
+
+.popup-inner {
+  padding: 0;
+}
+
 </style>
 
+{% schema %}
+{
+  "name": "Popup image cliquable",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_line_1",
+      "label": "Texte non cliquable",
+      "default": "Voici une phrase descriptive"
+    },
+    {
+      "type": "text",
+      "id": "text_line_2",
+      "label": "Texte cliquable (ouvre l’image)",
+      "default": "Cliquez ici pour afficher l’image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image à afficher"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Couleur du texte cliquable",
+      "default": "#007acc"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond du cadre",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi des bords (px)",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "default": 12
+    },
+    {
+  "type": "range",
+  "id": "padding",
+  "label": "Espacement intérieur (px)",
+  "min": 0,
+  "max": 60,
+  "step": 1,
+  "default": 20
+},
+    {
+  "type": "range",
+  "id": "font_size_title",
+  "label": "Taille du texte (ligne 1)",
+  "min": 12,
+  "max": 30,
+  "step": 1,
+  "default": 18
+},
+{
+  "type": "range",
+  "id": "font_size_link",
+  "label": "Taille du texte cliquable (ligne 2)",
+  "min": 12,
+  "max": 30,
+  "step": 1,
+  "default": 16
+},
+{
+  "type": "range",
+  "id": "margin_top",
+  "label": "Marge au-dessus de la section (px)",
+  "min": 0,
+  "max": 100,
+  "step": 5,
+  "default": 20
+},
+{
+  "type": "range",
+  "id": "margin_bottom",
+  "label": "Marge en dessous de la section (px)",
+  "min": 0,
+  "max": 100,
+  "step": 5,
+  "default": 20
+}
+
+  ],
+  "presets": [
+    {
+      "name": "Bloc avec image popup",
+      "category": "Personnalisé"
+    }
+  ]
+}
+{% endschema %}
 <script>
-  function openPopup{{ section.id }}() {
-    document.getElementById("popup-overlay-{{ section.id }}").classList.add("active");
-  }
-
-  function closePopup{{ section.id }}() {
-    document.getElementById("popup-overlay-{{ section.id }}").classList.remove("active");
-  }
-
   document.addEventListener("DOMContentLoaded", function () {
-    const overlay = document.getElementById("popup-overlay-{{ section.id }}");
-    overlay?.addEventListener("click", function (event) {
-      if (!event.target.closest(".popup-inner")) {
-        closePopup{{ section.id }}();
+    const dialog = document.getElementById("popup-image-{{ section.id }}");
+
+    dialog?.addEventListener("click", function (event) {
+      const rect = event.target.getBoundingClientRect();
+
+      // Si on clique en dehors de .popup-inner, on ferme
+      const clickedOutside =
+        !event.target.closest(".popup-inner") && event.target === dialog;
+
+      if (clickedOutside) {
+        dialog.close();
       }
     });
   });
