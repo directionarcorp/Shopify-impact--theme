@@ -1,0 +1,161 @@
+{% comment %}
+Section Shopify personnalisée : Texte + lien cliquable ouvrant une image en lightbox
+Compatible avec le thème Impact – Version améliorée
+{% endcomment %}
+
+<div 
+  class="custom-popup-section" 
+  style="
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    padding: {{ block.settings.padding }}px;
+    margin-top: {{ block.settings.margin_top }}px;
+    margin-bottom: {{ block.settings.margin_bottom }}px;
+    --font-size-title: {{ block.settings.font_size_title }}px;
+    --font-size-link: {{ block.settings.font_size_link }}px;
+  ">
+
+
+  <p class="popup-title-text">{{ block.settings.text_line_1 }}</p>
+
+  <button 
+    class="popup-link-text" 
+    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
+    style="color: {{ block.settings.link_color }};">
+    {{ block.settings.text_line_2 }}
+  </button>
+
+  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie">
+    <div class="popup-inner">
+      <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close();">×</button>
+      {% if block.settings.image != blank %}
+        <img src="{{ block.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
+      {% else %}
+        <p>Aucune image sélectionnée</p>
+      {% endif %}
+    </div>
+  </dialog>
+</div>
+
+<style>
+.custom-popup-section {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.popup-title-text {
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.popup-link-text {
+  font-size: var(--font-size-link);
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.popup-link-text:hover {
+  opacity: 0.8;
+}
+
+.popup-dialog {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  padding: 0;
+  background: transparent;
+  margin: auto;
+}
+
+.popup-inner {
+  background: transparent;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  display: inline-block; /* Pour que la croix suive la taille de l'image */
+}
+
+
+.popup-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.popup-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #000;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 1;
+}
+
+
+.popup-close:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .popup-title-text {
+    font-size: 1rem;
+  }
+
+  .popup-link-text {
+    font-size: 0.95rem;
+  }
+}
+  #shopify-section-{{ section.id }}.section {
+  padding-top: {{ block.settings.margin_top }}px !important;
+  padding-bottom: {{ block.settings.margin_bottom }}px !important;
+}
+.custom-popup-section * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popup-title-text {
+  margin-bottom: 0.3rem;
+}
+
+.popup-inner {
+  padding: 0;
+}
+
+</style>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dialog = document.getElementById("popup-image-{{ section.id }}");
+
+    dialog?.addEventListener("click", function (event) {
+      const rect = event.target.getBoundingClientRect();
+
+      // Si on clique en dehors de .popup-inner, on ferme
+      const clickedOutside =
+        !event.target.closest(".popup-inner") && event.target === dialog;
+
+      if (clickedOutside) {
+        dialog.close();
+      }
+    });
+  });
+</script>
