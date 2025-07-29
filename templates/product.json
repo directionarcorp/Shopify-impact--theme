@@ -121,8 +121,8 @@
         "padding": 0,
         "font_size_title": 12,
         "font_size_link": 12,
-        "margin_top": 0,
-        "margin_bottom": 0
+        "margin_top": 5,
+        "margin_bottom": 5
       }
     },
     "faq_BkgFKL": {
