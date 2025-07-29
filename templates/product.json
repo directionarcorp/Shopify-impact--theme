@@ -113,11 +113,11 @@
       "name": "Bloc avec image popup",
       "settings": {
         "text_line_1": "Vous ne savez pas quelle teinte choisir ?",
-        "text_line_2": "Cliquez ici pour trouver la teinte qu'il vous faut",
+        "text_line_2": "Cliquez ici pour trouver votre teinte",
         "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
         "background_color": "#f8f8f8",
         "border_radius": 12,
-        "padding": 25
+        "padding": 10
       }
     },
     "faq_BkgFKL": {
