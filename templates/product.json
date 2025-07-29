@@ -76,6 +76,21 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "popup_image_block_FWNLbG": {
+          "type": "popup_image_block",
+          "settings": {
+            "text_line_1": "Voici une phrase descriptive",
+            "text_line_2": "Cliquez ici pour afficher l’image",
+            "link_color": "#007acc",
+            "background_color": "#f8f8f8",
+            "border_radius": 12,
+            "padding": 20,
+            "font_size_title": 18,
+            "font_size_link": 16,
+            "margin_top": 20,
+            "margin_bottom": 20
+          }
         }
       },
       "block_order": [
@@ -88,7 +103,8 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "popup_image_block_FWNLbG"
       ],
       "settings": {
         "full_width": true,
@@ -110,6 +126,7 @@
     },
     "popup_image_block_ijR4Fk": {
       "type": "popup-image-block",
+      "disabled": true,
       "name": "Bloc avec image popup",
       "settings": {
         "text_line_1": "Vous ne savez pas quelle teinte choisir ?",
