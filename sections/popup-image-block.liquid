@@ -282,37 +282,29 @@ dialog::backdrop {
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const dialog = document.getElementById("popup-image-{{ section.id }}");
-
-    dialog?.addEventListener("click", function (event) {
-      const rect = event.target.getBoundingClientRect();
-
-      // Si on clique en dehors de .popup-inner, on ferme
-      const clickedOutside =
-        !event.target.closest(".popup-inner") && event.target === dialog;
-
-      if (clickedOutside) {
-        dialog.close();
-      document.addEventListener("DOMContentLoaded", function () {
-    const dialog = document.querySelector("dialog");
     const trigger = document.querySelector(".open-popup-link");
     const close = document.querySelector(".popup-close");
 
     if (!dialog || !trigger) return;
 
-    // Vérifie que dialog et showModal sont supportés
-    const supportsDialog = typeof HTMLDialogElement === "function" && typeof dialog.showModal === "function";
+    const supportsDialog =
+      typeof HTMLDialogElement === "function" &&
+      typeof dialog.showModal === "function";
 
+    // OUVERTURE
     trigger.addEventListener("click", function (e) {
       e.preventDefault();
 
       if (supportsDialog) {
+        dialog.offsetHeight; // force redraw Safari
         dialog.showModal();
       } else {
-        dialog.setAttribute("open", "open"); // fallback pour navigateurs non supportés
+        dialog.setAttribute("open", "open");
         dialog.style.display = "block";
       }
     });
 
+    // FERMETURE AU CLIC SUR CROIX
     if (close) {
       close.addEventListener("click", function () {
         if (supportsDialog) {
@@ -323,5 +315,20 @@ dialog::backdrop {
         }
       });
     }
+
+    // FERMETURE AU CLIC EN DEHORS DU CONTENU
+    dialog.addEventListener("click", function (event) {
+      const clickedOutside =
+        !event.target.closest(".popup-inner") && event.target === dialog;
+
+      if (clickedOutside) {
+        if (supportsDialog) {
+          dialog.close();
+        } else {
+          dialog.removeAttribute("open");
+          dialog.style.display = "none";
+        }
+      }
+    });
   });
 </script>
