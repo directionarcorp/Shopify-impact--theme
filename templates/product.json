@@ -24,11 +24,12 @@
             "heading_tag": "h2"
           }
         },
-        "collapsible_text_9FFrrc": {
-          "type": "collapsible_text",
+        "image_ACN3eq": {
+          "type": "image",
           "settings": {
-            "title": "Tenue 48H",
-            "content": ""
+            "image": "shopify://shop_images/Avantages_de_notre_poudre_capillaire.webp",
+            "alignment": "start",
+            "max_width": 320
           }
         },
         "badges": {
@@ -80,7 +81,7 @@
       "block_order": [
         "liquid_V3xHB6",
         "title",
-        "collapsible_text_9FFrrc",
+        "image_ACN3eq",
         "badges",
         "rating",
         "payment_terms",
