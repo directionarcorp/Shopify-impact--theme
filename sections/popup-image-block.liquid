@@ -65,13 +65,20 @@ Compatible avec le thème Impact – Version améliorée
 }
 
 .popup-dialog {
-  width: 100%;
-  max-width: 100%;
-  border: none;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3); /* Optionnel : léger fond pour la lightbox */
   padding: 0;
-  background: transparent;
-  margin: auto;
+  margin: 0;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
 }
+
 
 .popup-inner {
   background: transparent;
