@@ -7,7 +7,7 @@ Section personnalisée avec popup image compatible mobile
   style="
     background-color: {{ section.settings.background_color }};
     border-radius: {{ section.settings.border_radius }}px;
-    padding: {{ section.settings.padding }}px;
+    padding: {{ section.settings.padding | default: 0 }}px;
     margin-top: {{ section.settings.margin_top }}px;
     margin-bottom: {{ section.settings.margin_bottom }}px;
     --font-size-title: {{ section.settings.font_size_title }}px;
