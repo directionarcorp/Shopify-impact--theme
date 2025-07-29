@@ -19,11 +19,12 @@ Compatible avec le thème Impact – Version améliorée
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
   <button 
-    class="popup-link-text" 
-    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
-    style="color: {{ section.settings.link_color }};">
-    {{ section.settings.text_line_2 }}
-  </button>
+  class="popup-link-text" 
+  onclick="openPopup{{ section.id }}()" 
+  style="color: {{ section.settings.link_color }};">
+  {{ section.settings.text_line_2 }}
+</button>
+
 
   <div id="popup-overlay-{{ section.id }}" class="popup-overlay">
   <div class="popup-inner">
