@@ -551,45 +551,6 @@
         "border_thickness": 0,
         "lazy": true
       }
-    },
-    "media_grid_CtAnfb": {
-      "type": "media-grid",
-      "blocks": {
-        "image_zQXBX9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Pot_de_poudre_capillaire_1f074731-5c2b-4aab-8dfd-bfb5bcdfec02.webp",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_zQXBX9"
-      ],
-      "name": "Media grid",
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 150,
-        "background": "",
-        "background_gradient": ""
-      }
     }
   },
   "order": [
@@ -598,7 +559,6 @@
     "custom_liquid_zcrypk",
     "before_after_image_QtLKh7",
     "media_grid_ctg6dp",
-    "meditrust_tableau_UiURp3",
-    "media_grid_CtAnfb"
+    "meditrust_tableau_UiURp3"
   ]
 }
