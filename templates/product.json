@@ -115,6 +115,7 @@
         "text_line_1": "Vous ne savez pas quelle teinte choisir ?",
         "text_line_2": "Cliquez ici pour trouver votre teinte",
         "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
+        "link_color": "#1a1a1a",
         "background_color": "#f8f8f8",
         "border_radius": 12,
         "padding": 10
