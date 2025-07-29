@@ -3,7 +3,14 @@ Section Shopify personnalisée : Texte + lien cliquable ouvrant une image en lig
 Compatible avec le thème Impact – Version améliorée
 {% endcomment %}
 
-<div class="custom-popup-section" style="background-color: {{ section.settings.background_color }}; border-radius: {{ section.settings.border_radius }}px; padding: {{ section.settings.padding }}px;">
+<div class="custom-popup-section" style="
+  background-color: {{ section.settings.background_color }};
+  border-radius: {{ section.settings.border_radius }}px;
+  padding: {{ section.settings.padding }}px;
+  margin-top: {{ section.settings.margin_top }}px;
+  margin-bottom: {{ section.settings.margin_bottom }}px;
+">
+
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
   <button 
