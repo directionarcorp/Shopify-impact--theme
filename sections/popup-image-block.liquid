@@ -19,23 +19,23 @@ Compatible avec le thème Impact – Version améliorée
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
   <button 
-    class="popup-link-text" 
-    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
-    style="color: {{ section.settings.link_color }};">
-    {{ section.settings.text_line_2 }}
-  </button>
+  class="popup-link-text" 
+  onclick="openPopup{{ section.id }}()" 
+  style="color: {{ section.settings.link_color }};">
+  {{ section.settings.text_line_2 }}
+</button>
 
-  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie">
-    <div class="popup-inner">
-      <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close();">×</button>
-      {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
-      {% else %}
-        <p>Aucune image sélectionnée</p>
-      {% endif %}
-    </div>
-  </dialog>
+<div id="popup-overlay-{{ section.id }}" class="popup-overlay" style="display: none;">
+  <div class="popup-inner">
+    <button class="popup-close" onclick="closePopup{{ section.id }}()">×</button>
+    {% if section.settings.image != blank %}
+      <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
+    {% else %}
+      <p>Aucune image sélectionnée</p>
+    {% endif %}
+  </div>
 </div>
+
 
 <style>
 .custom-popup-section {
