@@ -1,6 +1,5 @@
 {% comment %}
-Section Shopify personnalisée : Texte + lien cliquable ouvrant une image en lightbox
-Compatible avec le thème Impact – Version améliorée
+Section personnalisée avec popup image compatible mobile
 {% endcomment %}
 
 <div 
@@ -15,26 +14,26 @@ Compatible avec le thème Impact – Version améliorée
     --font-size-link: {{ section.settings.font_size_link }}px;
   ">
 
-
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
   <button 
     class="popup-link-text" 
-    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
+    onclick="document.getElementById('modal-{{ section.id }}').classList.add('show');"
     style="color: {{ section.settings.link_color }};">
     {{ section.settings.text_line_2 }}
   </button>
 
-  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie">
-    <div class="popup-inner">
-      <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close();">×</button>
+  <div id="modal-{{ section.id }}" class="custom-modal">
+    <div class="custom-modal-overlay" onclick="closeModal('{{ section.id }}')"></div>
+    <div class="custom-modal-content">
+      <button class="custom-modal-close" onclick="closeModal('{{ section.id }}')">×</button>
       {% if section.settings.image != blank %}
         <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
       {% else %}
         <p>Aucune image sélectionnée</p>
       {% endif %}
     </div>
-  </dialog>
+  </div>
 </div>
 
 <style>
@@ -44,13 +43,11 @@ Compatible avec le thème Impact – Version améliorée
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
-
 .popup-title-text {
   font-size: var(--font-size-title);
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-
 .popup-link-text {
   font-size: var(--font-size-link);
   cursor: pointer;
@@ -59,57 +56,60 @@ Compatible avec le thème Impact – Version améliorée
   text-decoration: underline;
   padding: 0;
 }
-
 .popup-link-text:hover {
   opacity: 0.8;
 }
 
-.popup-dialog {
+/* Modal */
+.custom-modal {
+  position: fixed;
+  z-index: 10000;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+.custom-modal.show {
+  display: block;
+}
+.custom-modal-overlay {
+  position: absolute;
+  top: 0; left: 0;
   width: 100%;
-  max-width: 100%;
-  border: none;
-  padding: 0;
-  background: transparent;
-  margin: auto;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
 }
-
-.popup-inner {
-  background: transparent;
-  padding: 0;
+.custom-modal-content {
   position: relative;
-  text-align: center;
-  display: inline-block; /* Pour que la croix suive la taille de l'image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  max-width: 95vw;
+  max-height: 95vh;
+  padding: 0;
 }
-
-
 .popup-image {
   max-width: 90vw;
   max-height: 90vh;
   width: auto;
   height: auto;
-  border: none;
-  border-radius: 0;
   display: block;
   margin: 0 auto;
-  position: relative;
+  border: none;
 }
-
-
-.popup-close {
+.custom-modal-close {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
   background: none;
   border: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #000;
   cursor: pointer;
   z-index: 10;
-  line-height: 1;
 }
-
-
-.popup-close:hover {
+.custom-modal-close:hover {
   color: #ccc;
 }
 
@@ -117,29 +117,18 @@ Compatible avec le thème Impact – Version améliorée
   .popup-title-text {
     font-size: 1rem;
   }
-
   .popup-link-text {
     font-size: 0.95rem;
   }
 }
-  #shopify-section-{{ section.id }}.section {
-  padding-top: {{ section.settings.margin_top }}px !important;
-  padding-bottom: {{ section.settings.margin_bottom }}px !important;
-}
-.custom-popup-section * {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.popup-title-text {
-  margin-bottom: 0.3rem;
-}
-
-.popup-inner {
-  padding: 0;
-}
-
 </style>
+
+<script>
+  function closeModal(id) {
+    const modal = document.getElementById("modal-" + id);
+    if (modal) modal.classList.remove("show");
+  }
+</script>
 
 {% schema %}
 {
@@ -186,51 +175,50 @@ Compatible avec le thème Impact – Version améliorée
       "default": 12
     },
     {
-  "type": "range",
-  "id": "padding",
-  "label": "Espacement intérieur (px)",
-  "min": 0,
-  "max": 60,
-  "step": 1,
-  "default": 20
-},
+      "type": "range",
+      "id": "padding",
+      "label": "Espacement intérieur (px)",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 20
+    },
     {
-  "type": "range",
-  "id": "font_size_title",
-  "label": "Taille du texte (ligne 1)",
-  "min": 12,
-  "max": 30,
-  "step": 1,
-  "default": 18
-},
-{
-  "type": "range",
-  "id": "font_size_link",
-  "label": "Taille du texte cliquable (ligne 2)",
-  "min": 12,
-  "max": 30,
-  "step": 1,
-  "default": 16
-},
-{
-  "type": "range",
-  "id": "margin_top",
-  "label": "Marge au-dessus de la section (px)",
-  "min": 0,
-  "max": 100,
-  "step": 5,
-  "default": 20
-},
-{
-  "type": "range",
-  "id": "margin_bottom",
-  "label": "Marge en dessous de la section (px)",
-  "min": 0,
-  "max": 100,
-  "step": 5,
-  "default": 20
-}
-
+      "type": "range",
+      "id": "font_size_title",
+      "label": "Taille du texte (ligne 1)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "font_size_link",
+      "label": "Taille du texte cliquable (ligne 2)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Marge au-dessus de la section (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Marge en dessous de la section (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    }
   ],
   "presets": [
     {
@@ -240,20 +228,3 @@ Compatible avec le thème Impact – Version améliorée
   ]
 }
 {% endschema %}
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const dialog = document.getElementById("popup-image-{{ section.id }}");
-
-    dialog?.addEventListener("click", function (event) {
-      const rect = event.target.getBoundingClientRect();
-
-      // Si on clique en dehors de .popup-inner, on ferme
-      const clickedOutside =
-        !event.target.closest(".popup-inner") && event.target === dialog;
-
-      if (clickedOutside) {
-        dialog.close();
-      }
-    });
-  });
-</script>
