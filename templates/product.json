@@ -108,19 +108,6 @@
         "input_text_color": ""
       }
     },
-    "custom_liquid_M4x3eA": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<div class=\"shade-quiz-container\">\n  <button type=\"button\" class=\"shade-quiz-trigger\" onclick=\"document.getElementById('shadeQuizModal').showModal()\">\n    <h3 class=\"quiz-title\">Du mal à choisir votre teinte ?</h3>\n    <p class=\"quiz-cta\">Cliquez ici pour trouver votre teinte idéale →</p>\n  </button>\n</div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "faq_BkgFKL": {
       "type": "faq",
       "blocks": {
@@ -577,7 +564,6 @@
   },
   "order": [
     "main",
-    "custom_liquid_M4x3eA",
     "faq_BkgFKL",
     "custom_liquid_zcrypk",
     "before_after_image_QtLKh7",

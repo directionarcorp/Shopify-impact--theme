@@ -1,6 +1,156 @@
+{% comment %}
+Section personnalisée : Texte + Lien cliquable qui ouvre une image dans une popup.
+Compatible Shopify Thème Impact.
+Développé pour un usage responsive, accessible et personnalisable via l'éditeur.
+{% endcomment %}
+
+<div class="custom-popup-section" style="background-color: {{ section.settings.background_color }}; border-radius: {{ section.settings.border_radius }}px; padding: {{ section.settings.padding }}px;">
+  <p class="popup-headline">{{ section.settings.headline }}</p>
+
+  <button class="popup-trigger" onclick="document.getElementById('popup-image-{{ section.id }}').showModal()">
+    {{ section.settings.link_text }}
+  </button>
+
+  <dialog id="popup-image-{{ section.id }}" class="popup-modal" onclick="this.close()">
+    <div class="popup-image-wrapper" onclick="event.stopPropagation();">
+      <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="Image popup" loading="lazy">
+      <button class="popup-close" onclick="this.closest('dialog').close()">✕</button>
+    </div>
+  </dialog>
+</div>
+
+<style>
+.custom-popup-section {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.popup-headline {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.popup-trigger {
+  display: inline-block;
+  background: none;
+  color: #0066cc;
+  text-decoration: underline;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.popup-trigger:hover {
+  text-decoration: none;
+  color: #004b99;
+}
+
+.popup-modal {
+  border: none;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.popup-image-wrapper {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.popup-image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.popup-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Texte + image popup",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Texte non cliquable",
+      "default": "Voici une description ou un titre."
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Texte cliquable (lien)",
+      "default": "Voir l’image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image à afficher dans la popup"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond du cadre",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Arrondi des bords",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacement intérieur (padding)",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Texte + image popup",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
