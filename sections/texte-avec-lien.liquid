@@ -14,7 +14,7 @@ Développé pour un usage responsive, accessible et personnalisable via l'édite
   <dialog id="popup-image-{{ section.id }}" class="popup-modal" onclick="this.close()">
     <div class="popup-image-wrapper" onclick="event.stopPropagation();">
       <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="Image popup" loading="lazy">
-      <button class="popup-close" onclick="this.closest('dialog').close()">✕</button>
+      <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close()">✕</button>
     </div>
   </dialog>
 </div>
