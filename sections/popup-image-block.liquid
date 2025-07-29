@@ -31,6 +31,16 @@ Compatibilité totale mobile + desktop. Thème Impact.
 </div>
 
 
+<!-- Popup DETACHEE du layout -->
+<div class="popup-overlay" style="display: none;">
+  <div class="popup-content">
+    <button class="popup-close" aria-label="Fermer">&times;</button>
+    <img src="{{ section.settings.popup_image | image_url: width: 1200 }}" alt="Popup Image" />
+  </div>
+</div>
+
+
+
 <style>
 .popup-overlay {
   position: fixed;
@@ -74,6 +84,57 @@ Compatibilité totale mobile + desktop. Thème Impact.
   cursor: pointer;
   z-index: 1001;
 }
+  <style>
+/* Important : éviter toute perturbation du layout principal */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  display: none; /* par défaut masqué */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+/* Réapparaît au clic */
+.popup-overlay.active {
+  display: flex;
+}
+
+.popup-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.popup-content img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+</style>
+
 </style>
 
 {% schema %}
@@ -182,18 +243,18 @@ document.addEventListener('DOMContentLoaded', function () {
   if (trigger && popup && closeBtn) {
     trigger.addEventListener('click', function (e) {
       e.preventDefault();
-      popup.style.display = 'flex';
+      popup.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
 
     closeBtn.addEventListener('click', function () {
-      popup.style.display = 'none';
+      popup.classList.remove('active');
       document.body.style.overflow = '';
     });
 
     popup.addEventListener('click', function (e) {
       if (e.target === popup) {
-        popup.style.display = 'none';
+        popup.classList.remove('active');
         document.body.style.overflow = '';
       }
     });
