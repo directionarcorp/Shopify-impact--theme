@@ -155,3 +155,12 @@ Développé pour un usage responsive, accessible et personnalisable via l'édite
   ]
 }
 {% endschema %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup-image-{{ section.id }}");
+    if (popup && popup.open) {
+      popup.close();
+    }
+  });
+</script>
+
