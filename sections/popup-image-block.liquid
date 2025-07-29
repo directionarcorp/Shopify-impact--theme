@@ -46,16 +46,16 @@ Compatible avec le thème Impact – Version améliorée
 }
 
 .popup-title-text {
-  font-size: {{ section.settings.font_size_title }}px;
+  font-size: var(--font-size-title);
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .popup-link-text {
+  font-size: var(--font-size-link);
+  cursor: pointer;
   background: none;
   border: none;
-  font-size: {{ section.settings.font_size_link }}px;
-  cursor: pointer;
   text-decoration: underline;
   padding: 0;
 }
