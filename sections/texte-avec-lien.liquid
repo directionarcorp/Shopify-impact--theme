@@ -50,13 +50,13 @@ Développé pour un usage responsive, accessible et personnalisable via l'édite
 }
 
 .popup-modal {
+  position: fixed !important;
+  inset: 0;
+  z-index: 9999;
   border: none;
   padding: 0;
+  margin: 0;
   background: rgba(0, 0, 0, 0.7);
-  width: 100vw;
-  height: 100vh;
-  max-width: none;
-  max-height: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,9 +81,9 @@ Développé pour un usage responsive, accessible et personnalisable via l'édite
 
 .popup-close {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  background: rgba(0, 0, 0, 0.6);
+  top: -10px;
+  right: -10px;
+  background: #333;
   color: white;
   border: none;
   border-radius: 50%;
@@ -96,6 +96,7 @@ Développé pour un usage responsive, accessible et personnalisable via l'édite
   justify-content: center;
 }
 </style>
+
 
 {% schema %}
 {
