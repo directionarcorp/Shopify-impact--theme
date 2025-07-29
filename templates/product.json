@@ -108,6 +108,18 @@
         "input_text_color": ""
       }
     },
+    "texte_avec_lien_E7fbHN": {
+      "type": "texte-avec-lien",
+      "name": "Texte + image popup",
+      "settings": {
+        "headline": "Vous ne savez pas quelle teinte choisir ?",
+        "link_text": "Cliquez ici pour trouver votre la teinte qu'il vous faut",
+        "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
+        "background_color": "#f9f9f9",
+        "border_radius": 18,
+        "padding": 20
+      }
+    },
     "faq_BkgFKL": {
       "type": "faq",
       "blocks": {
@@ -564,6 +576,7 @@
   },
   "order": [
     "main",
+    "texte_avec_lien_E7fbHN",
     "faq_BkgFKL",
     "custom_liquid_zcrypk",
     "before_after_image_QtLKh7",
