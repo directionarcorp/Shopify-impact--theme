@@ -1020,15 +1020,16 @@ Les contrevenants seront poursuivis dans toute la mesure permise par la loi.
           
         </div>
 {% if section.settings.custom_image != blank %}
-  <div class="meditrust_comparison-custom-image-{{ section.id }}" style="text-align: center; margin-top: 32px; margin-bottom: 32px;">
+  <div class="meditrust_comparison-custom-image-{{ section.id }}" style="text-align: center; margin: 32px 0;">
     <img
       src="{{ section.settings.custom_image | image_url }}"
-      alt="Illustration"
+      alt="Image comparaison"
       style="max-width: 100%; height: auto;"
       {% if lazy %}loading="lazy"{% endif %}
     >
   </div>
 {% endif %}
+
 
         <div class="meditrust_comparison-table-{{ section.id }}" style="align-content: center;">
           <div class="meditrust_comparison-grid-{{ section.id }} meditrust_comparison-grid-header-{{ section.id }}">
@@ -1357,7 +1358,6 @@ Les contrevenants seront poursuivis dans toute la mesure permise par la loi.
   "id": "custom_image",
   "label": "Image entre le texte et le tableau"
 },
-
       {
         "type": "checkbox",
         "id": "text_custom",
