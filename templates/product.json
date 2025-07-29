@@ -356,6 +356,37 @@
         "background_gradient": ""
       }
     },
+    "multiple_images_with_text_GJQMjb": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_jxQnxi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "",
+            "content": "<p>Déjà <strong>+30 000 clients</strong> ont adopté leur teinte parmi nos 6 nuances testées et approuvées.<br/><strong>Et vous, laquelle sera la vôtre ?</strong></p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_jxQnxi"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "meditrust_tableau_UiURp3": {
       "type": "meditrust-tableau",
       "blocks": {
@@ -577,37 +608,6 @@
         "border_thickness": 0,
         "lazy": true
       }
-    },
-    "multiple_images_with_text_GJQMjb": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_jxQnxi": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "",
-            "content": "<p><strong>+30 000 clients </strong>ont trouvé leur teinte idéale parmi nos<strong>6 nuances disponibles</strong>. <br/>Et vous, laquelle sera la vôtre ?</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_jxQnxi"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     }
   },
   "order": [
@@ -617,7 +617,7 @@
     "custom_liquid_zcrypk",
     "before_after_image_QtLKh7",
     "media_grid_ctg6dp",
-    "meditrust_tableau_UiURp3",
-    "multiple_images_with_text_GJQMjb"
+    "multiple_images_with_text_GJQMjb",
+    "meditrust_tableau_UiURp3"
   ]
 }
