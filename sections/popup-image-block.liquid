@@ -19,11 +19,11 @@ Compatible avec le thème Impact – Version améliorée
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
   <button 
-    class="popup-link-text" 
-    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
-    style="color: {{ section.settings.link_color }};">
-    {{ section.settings.text_line_2 }}
-  </button>
+  class="popup-link-text open-popup-link" 
+  style="color: {{ section.settings.link_color }};">
+  {{ section.settings.text_line_2 }}
+</button>
+
 
   <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie">
     <div class="popup-inner">
