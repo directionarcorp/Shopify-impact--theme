@@ -117,6 +117,8 @@ quick buy information in a template, that will be extracted in JS, but ensure it
 
     {%- for block in section.blocks -%}
       {%- case block.type -%}
+        {%- when 'popup_image_block' -%}
+      {%- render 'product-popup-block', block: block -%}
         {%- when '@app' -%}
           {%- render block -%}
 
@@ -1092,6 +1094,7 @@ quick buy information in a template, that will be extracted in JS, but ensure it
               "value": "end",
               "label": "Right"
             }
+            
           ],
           "default": "start"
         }
