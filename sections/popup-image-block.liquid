@@ -34,7 +34,8 @@ Compatible avec le thème Impact – Version améliorée
         <p>Aucune image sélectionnée</p>
       {% endif %}
     </div>
-  </div>
+  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie" style="display: none;">
+
 </div>
 
 
@@ -278,6 +279,33 @@ Compatible avec le thème Impact – Version améliorée
       dialog.querySelector('.popup-close')?.addEventListener("click", () => {
         dialog.removeAttribute("open");
       });
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dialog = document.getElementById("popup-image-{{ section.id }}");
+    const trigger = document.querySelector(".popup-link-text");
+
+    if (dialog && typeof dialog.showModal === "function") {
+      dialog.style.display = "none";
+
+      trigger.addEventListener("click", function () {
+        dialog.style.display = "block";
+        dialog.showModal();
+      });
+
+      dialog.addEventListener("close", function () {
+        dialog.style.display = "none";
+      });
+
+      dialog.addEventListener("click", function (event) {
+        if (!event.target.closest(".popup-inner")) {
+          dialog.close();
+        }
+      });
+    } else {
+      console.warn("Le navigateur ne supporte pas <dialog>.");
     }
   });
 </script>
