@@ -1019,6 +1019,16 @@ Les contrevenants seront poursuivis dans toute la mesure permise par la loi.
           {% endif %}
           
         </div>
+{% if section.settings.custom_image != blank %}
+  <div class="meditrust_comparison-custom-image-{{ section.id }}" style="text-align: center; margin-top: 32px; margin-bottom: 32px;">
+    <img
+      src="{{ section.settings.custom_image | image_url }}"
+      alt="Illustration"
+      style="max-width: 100%; height: auto;"
+      {% if lazy %}loading="lazy"{% endif %}
+    >
+  </div>
+{% endif %}
 
         <div class="meditrust_comparison-table-{{ section.id }}" style="align-content: center;">
           <div class="meditrust_comparison-grid-{{ section.id }} meditrust_comparison-grid-header-{{ section.id }}">
