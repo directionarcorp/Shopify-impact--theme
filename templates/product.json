@@ -24,6 +24,13 @@
             "heading_tag": "h2"
           }
         },
+        "collapsible_text_9FFrrc": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Tenue 48H",
+            "content": ""
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
@@ -73,6 +80,7 @@
       "block_order": [
         "liquid_V3xHB6",
         "title",
+        "collapsible_text_9FFrrc",
         "badges",
         "rating",
         "payment_terms",
