@@ -12,27 +12,21 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
         "liquid_V3xHB6": {
           "type": "liquid",
           "settings": {
             "liquid": "<div class=\"product-info__liquid\" bis_skin_checked=\"1\">\n            <div style=\"display: flex; align-items: center; font-family: 'DIN Next', Arial, sans-serif; font-size: 13px;\" bis_skin_checked=\"1\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0908/5278/6562/files/etoiles_trustpilot.webp?v=1747998238\" alt=\"Trustpilot Stars\" style=\"width: 100px; height: auto; margin-right: 10px;\">\n  <span style=\"color: #1a1a1a; font-weight: bold;\">\n    + de 30 000 <span style=\"font-weight: normal;\"> clients satisfaits !</span>\n  </span>\n</div>\n          </div>"
           }
         },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
         },
         "rating": {
           "type": "rating",
@@ -42,10 +36,6 @@
         },
         "payment_terms": {
           "type": "payment_terms",
-          "settings": {}
-        },
-        "separator": {
-          "type": "separator",
           "settings": {}
         },
         "description": {
@@ -81,13 +71,11 @@
         }
       },
       "block_order": [
-        "title",
         "liquid_V3xHB6",
+        "title",
         "badges",
-        "price",
         "rating",
         "payment_terms",
-        "separator",
         "description",
         "variant_picker",
         "quantity_selector",
@@ -97,8 +85,8 @@
         "full_width": true,
         "show_fixed_add_to_cart": true,
         "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
         "mobile_carousel_control": "floating_dots",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
