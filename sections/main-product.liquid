@@ -1099,7 +1099,99 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "default": "start"
         }
       ]
-    }    
+    },
+    {
+      "type": "popup_image_block",
+
+  "name": "Image + texte (popup)",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_line_1",
+      "label": "Texte non cliquable",
+      "default": "Voici une phrase descriptive"
+    },
+    {
+      "type": "text",
+      "id": "text_line_2",
+      "label": "Texte cliquable (ouvre l’image)",
+      "default": "Cliquez ici pour afficher l’image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image à afficher"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Couleur du texte cliquable",
+      "default": "#007acc"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond du cadre",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi des bords (px)",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Espacement intérieur (px)",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "font_size_title",
+      "label": "Taille du texte (ligne 1)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "font_size_link",
+      "label": "Taille du texte cliquable (ligne 2)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Marge au-dessus de la section (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Marge en dessous de la section (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    }
+  ]
+},
+
+  
   ],
   "settings": [
     {
