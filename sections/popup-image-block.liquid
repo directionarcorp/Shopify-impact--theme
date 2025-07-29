@@ -19,31 +19,25 @@ Compatible avec le thème Impact – Version améliorée
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
   <button 
-  class="popup-link-text" 
-  onclick="openPopup{{ section.id }}()" 
-  style="color: {{ section.settings.link_color }};">
-  {{ section.settings.text_line_2 }}
-</button>
+    class="popup-link-text" 
+    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
+    style="color: {{ section.settings.link_color }};">
+    {{ section.settings.text_line_2 }}
+  </button>
 
-
-  <div id="popup-overlay-{{ section.id }}" class="popup-overlay">
-  <div class="popup-inner">
-    <button class="popup-close" onclick="closePopup{{ section.id }}()">×</button>
-    {% if section.settings.image != blank %}
-      <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
-    {% else %}
-      <p>Aucune image sélectionnée</p>
-    {% endif %}
-  </div>
-</div>
-
+  <dialog id="popup-image-{{ section.id }}" class="popup-dialog" aria-label="Image agrandie">
+    <div class="popup-inner">
+      <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close();">×</button>
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
+      {% else %}
+        <p>Aucune image sélectionnée</p>
+      {% endif %}
+    </div>
+  </dialog>
 </div>
 
 <style>
-  .popup-overlay {
-  display: none !important;
-}
-
 .custom-popup-section {
   max-width: 900px;
   margin: 0 auto;
@@ -247,23 +241,19 @@ Compatible avec le thème Impact – Version améliorée
 }
 {% endschema %}
 <script>
-  function openPopup{{ section.id }}() {
-    document.getElementById("popup-overlay-{{ section.id }}").style.display = "flex";
-  }
-
-  function closePopup{{ section.id }}() {
-    document.getElementById("popup-overlay-{{ section.id }}").style.display = "none";
-  }
-
   document.addEventListener("DOMContentLoaded", function () {
-    const overlay = document.getElementById("popup-overlay-{{ section.id }}");
+    const dialog = document.getElementById("popup-image-{{ section.id }}");
 
-    if (overlay) {
-      overlay.addEventListener("click", function (event) {
-        if (!event.target.closest(".popup-inner")) {
-          closePopup{{ section.id }}();
-        }
-      });
-    }
+    dialog?.addEventListener("click", function (event) {
+      const rect = event.target.getBoundingClientRect();
+
+      // Si on clique en dehors de .popup-inner, on ferme
+      const clickedOutside =
+        !event.target.closest(".popup-inner") && event.target === dialog;
+
+      if (clickedOutside) {
+        dialog.close();
+      }
+    });
   });
 </script>
