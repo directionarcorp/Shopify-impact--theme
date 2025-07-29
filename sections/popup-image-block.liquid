@@ -1,12 +1,15 @@
 {% comment %}
 Section Shopify personnalisée : Texte + lien cliquable ouvrant une image en lightbox
-Compatible avec le thème Impact
+Compatible avec le thème Impact – Version améliorée
 {% endcomment %}
 
 <div class="custom-popup-section" style="background-color: {{ section.settings.background_color }}; border-radius: {{ section.settings.border_radius }}px; padding: {{ section.settings.padding }}px;">
   <p class="popup-title-text">{{ section.settings.text_line_1 }}</p>
 
-  <button class="popup-link-text" onclick="document.getElementById('popup-image-{{ section.id }}').showModal();">
+  <button 
+    class="popup-link-text" 
+    onclick="document.getElementById('popup-image-{{ section.id }}').showModal();" 
+    style="color: {{ section.settings.link_color }};">
     {{ section.settings.text_line_2 }}
   </button>
 
@@ -14,7 +17,7 @@ Compatible avec le thème Impact
     <div class="popup-inner">
       <button class="popup-close" onclick="document.getElementById('popup-image-{{ section.id }}').close();">×</button>
       {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="Image popup" loading="lazy" class="popup-image" />
+        <img src="{{ section.settings.image | image_url: width: 1800 }}" alt="Image popup" loading="lazy" class="popup-image" />
       {% else %}
         <p>Aucune image sélectionnée</p>
       {% endif %}
@@ -24,7 +27,7 @@ Compatible avec le thème Impact
 
 <style>
 .custom-popup-section {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -39,7 +42,6 @@ Compatible avec le thème Impact
 .popup-link-text {
   background: none;
   border: none;
-  color: #007acc;
   font-size: 1rem;
   cursor: pointer;
   text-decoration: underline;
@@ -47,12 +49,12 @@ Compatible avec le thème Impact
 }
 
 .popup-link-text:hover {
-  color: #005b99;
+  opacity: 0.8;
 }
 
 .popup-dialog {
-  width: 90%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 100%;
   border: none;
   padding: 0;
   background: transparent;
@@ -60,39 +62,38 @@ Compatible avec le thème Impact
 }
 
 .popup-inner {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 12px;
+  background: transparent;
+  padding: 0;
   position: relative;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  animation: fadeIn 0.2s ease-out;
 }
 
 .popup-image {
-  max-width: 100%;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
   height: auto;
-  border-radius: 8px;
+  border: none;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .popup-close {
   position: absolute;
-  top: 0.3rem;
-  right: 0.7rem;
+  top: 0.5rem;
+  right: 1rem;
   background: none;
   border: none;
   font-size: 2rem;
-  color: #999;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
   cursor: pointer;
+  z-index: 10;
 }
 
 .popup-close:hover {
-  color: #000;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.96); }
-  to { opacity: 1; transform: scale(1); }
+  color: #ccc;
 }
 
 @media (max-width: 768px) {
@@ -102,10 +103,6 @@ Compatible avec le thème Impact
 
   .popup-link-text {
     font-size: 0.95rem;
-  }
-
-  .popup-inner {
-    padding: 0.8rem;
   }
 }
 </style>
@@ -135,6 +132,12 @@ Compatible avec le thème Impact
     },
     {
       "type": "color",
+      "id": "link_color",
+      "label": "Couleur du texte cliquable",
+      "default": "#007acc"
+    },
+    {
+      "type": "color",
       "id": "background_color",
       "label": "Couleur de fond du cadre",
       "default": "#f8f8f8"
@@ -149,15 +152,14 @@ Compatible avec le thème Impact
       "default": 12
     },
     {
-  "type": "range",
-  "id": "padding",
-  "label": "Espacement intérieur (px)",
-  "min": 10,
-  "max": 60,
-  "step": 5,
-  "default": 25
-}
-
+      "type": "range",
+      "id": "padding",
+      "label": "Espacement intérieur (px)",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "default": 25
+    }
   ],
   "presets": [
     {
