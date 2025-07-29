@@ -127,6 +127,7 @@
     },
     "popup_image_block_ijR4Fk": {
       "type": "popup-image-block",
+      "disabled": true,
       "name": "Bloc avec image popup",
       "settings": {
         "text_line_1": "Vous ne savez pas quelle teinte choisir ?",
