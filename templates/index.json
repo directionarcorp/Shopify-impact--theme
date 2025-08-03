@@ -539,28 +539,40 @@
         "text_color": ""
       }
     },
-    "rich_text_tLxKPy": {
-      "type": "rich-text",
+    "impact_text_UdX9YC": {
+      "type": "impact-text",
       "blocks": {
-        "richtext_fT4FGP": {
-          "type": "richtext",
+        "item_Qpn6Lq": {
+          "type": "item",
           "settings": {
-            "content": ""
+            "title": "",
+            "subheading": "",
+            "content": "",
+            "button_text": "Je retrouve confiance en moi",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
           }
         }
       },
       "block_order": [
-        "richtext_fT4FGP"
+        "item_Qpn6Lq"
       ],
-      "disabled": true,
-      "name": "Rich text",
+      "name": "Impact text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "faq": {
@@ -663,7 +675,7 @@
     "scrolling_text_QcPPGG",
     "custom_liquid_ayELGx",
     "custom_liquid_46DDEY",
-    "rich_text_tLxKPy",
+    "impact_text_UdX9YC",
     "faq"
   ]
 }
