@@ -496,6 +496,22 @@
         "background_gradient": ""
       }
     },
+    "scrolling_text_QcPPGG": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "100% d'ingrédients d'origine naturelles",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 12,
+        "background": "#fcf8f5",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
     "custom_liquid_ayELGx": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -644,6 +660,7 @@
     "press",
     "images_with_text_scrolling_KTTMK4",
     "media_grid_33eFy4",
+    "scrolling_text_QcPPGG",
     "custom_liquid_ayELGx",
     "custom_liquid_46DDEY",
     "rich_text_tLxKPy",
