@@ -356,6 +356,32 @@
         "background_gradient": ""
       }
     },
+    "rich_text_MMCPrq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ziX4ij": {
+          "type": "heading",
+          "settings": {
+            "text": "La confiance dont vous et vos cheveux avez besoin",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_ziX4ij"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "text_with_icons_H3Gidz": {
       "type": "text-with-icons",
       "blocks": {
@@ -678,6 +704,7 @@
     "custom_liquid_zcrypk",
     "before_after_image_QtLKh7",
     "media_grid_ctg6dp",
+    "rich_text_MMCPrq",
     "text_with_icons_H3Gidz",
     "multiple_images_with_text_GJQMjb",
     "meditrust_tableau_UiURp3"
