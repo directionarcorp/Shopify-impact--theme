@@ -356,21 +356,82 @@
         "background_gradient": ""
       }
     },
-    "image_with_text_overlay_WbxCzz": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
+    "media_with_text_qty7ef": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_cdx6Md": {
+          "type": "image",
+          "settings": {
+            "media_width": 30,
+            "media_position": "start",
+            "text_position": "place-self-end-center text-center",
+            "icon": "picto-timer",
+            "icon_width": 40,
+            "subheading": "Résultat immédiat",
+            "title": "",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_VqkfXC": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_YE3gEQ": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_cdx6Md",
+        "image_VqkfXC",
+        "image_YE3gEQ"
+      ],
+      "name": "Media with text",
       "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/Capture_d_ecran_2025-08-03_230302_f38b2064-8ba7-4027-8e83-ec61d323eb41.png",
-        "mobile_image": "shopify://shop_images/Capture_d_ecran_2025-08-03_230302.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "full_width": false,
+        "spacing": "small"
       }
     },
     "multiple_images_with_text_GJQMjb": {
@@ -634,7 +695,7 @@
     "custom_liquid_zcrypk",
     "before_after_image_QtLKh7",
     "media_grid_ctg6dp",
-    "image_with_text_overlay_WbxCzz",
+    "media_with_text_qty7ef",
     "multiple_images_with_text_GJQMjb",
     "meditrust_tableau_UiURp3"
   ]
