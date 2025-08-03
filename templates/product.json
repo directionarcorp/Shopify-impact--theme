@@ -356,6 +356,54 @@
         "background_gradient": ""
       }
     },
+    "multiple_images_with_text_HLiCik": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_TFmbcN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2025-08-03_230039.png",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_TFmbcN"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "image_with_text_overlay_WbxCzz": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Capture_d_ecran_2025-08-03_230039_76e89d8a-779d-4030-94c4-11714640960f.png",
+        "mobile_image": "shopify://shop_images/Capture_d_ecran_2025-08-03_230039_1b952126-d39f-4dcb-a0b5-7ac70ccf5e0b.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "multiple_images_with_text_GJQMjb": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -617,6 +665,8 @@
     "custom_liquid_zcrypk",
     "before_after_image_QtLKh7",
     "media_grid_ctg6dp",
+    "multiple_images_with_text_HLiCik",
+    "image_with_text_overlay_WbxCzz",
     "multiple_images_with_text_GJQMjb",
     "meditrust_tableau_UiURp3"
   ]
