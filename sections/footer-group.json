@@ -85,6 +85,27 @@
         "text_color": ""
       }
     },
+    "contact_J7Yq34": {
+      "type": "contact",
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Vous avez la moindre question ?",
+        "content": "<p>Notre service client vous répond 24H/24 et 7J/7 !</p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -130,6 +151,7 @@
   },
   "order": [
     "text-with-icons",
+    "contact_J7Yq34",
     "footer"
   ]
 }
