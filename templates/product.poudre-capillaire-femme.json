@@ -428,10 +428,46 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": true,
-        "liquid": "<div class=\"responsive-image-wrapper\">\n  <style>\n    /* Par défaut, cacher la section */\n    .responsive-image-wrapper {\n      display: none;\n    }\n\n    /* Afficher la section seulement sur les écrans de taille mobile */\n    @media (max-width: 768px) {\n      .responsive-image-wrapper {\n        display: block;\n      }\n    }\n  </style>\n\n  <a href=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481\" target=\"_self\">\n    <img class=\"image-mobile lazy-image loaded\" src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481\" data-src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481\" data-srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481 414w\" data-sizes=\"(max-width: 414px) 414px, 828px\" alt=\"\" width=\"1000\" height=\"1000\" loading=\"lazy\" decoding=\"async\" srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 414w\" sizes=\"(max-width: 414px) 414px, 828px\">\n  </a>\n</div>",
+        "liquid": "<div class=\"responsive-image-wrapper\">\n  <style>\n    /* Par défaut, cacher la section */\n    .responsive-image-wrapper {\n      display: none;\n    }\n\n    /* Afficher la section seulement sur les écrans de taille mobile */\n    @media (max-width: 768px) {\n      .responsive-image-wrapper {\n        display: block;\n      }\n    }\n  </style>\n\n  <a href=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481\" target=\"_self\">\n    <img class=\"image-mobile lazy-image loaded\" src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481\" data-src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481\" data-srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481 414w\" data-sizes=\"(max-width: 414px) 414px, 828px\" alt=\"\" width=\"1000\" height=\"1000\" loading=\"lazy\" decoding=\"async\" srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Pot_de_poudre_capillaire.webp?v=1753720481 414w\" sizes=\"(max-width: 414px) 414px, 828px\">\n  </a>\n</div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "impact_text_RkLJPF": {
+      "type": "impact-text",
+      "blocks": {
+        "item_iXnRMT": {
+          "type": "item",
+          "settings": {
+            "title": "10",
+            "subheading": "teintes différentes disponibles",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 3.5
+          }
+        }
+      },
+      "block_order": [
+        "item_iXnRMT"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "meditrust_tableau_UiURp3": {
@@ -694,6 +730,7 @@
     "text_with_icons_H3Gidz",
     "multiple_images_with_text_GJQMjb",
     "custom_liquid_8q86TC",
+    "impact_text_RkLJPF",
     "meditrust_tableau_UiURp3",
     "1754256783816a0ff5"
   ]
