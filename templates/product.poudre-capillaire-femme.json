@@ -1,0 +1,740 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_V3xHB6": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-info__liquid\" bis_skin_checked=\"1\">\n            <div style=\"display: flex; align-items: center; font-family: 'DIN Next', Arial, sans-serif; font-size: 13px;\" bis_skin_checked=\"1\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0908/5278/6562/files/etoiles_trustpilot.webp?v=1747998238\" alt=\"Trustpilot Stars\" style=\"width: 100px; height: auto; margin-right: 10px;\">\n  <span style=\"color: #1a1a1a; font-weight: bold;\">\n    + de 30 000 <span style=\"font-weight: normal;\"> clients satisfaits !</span>\n  </span>\n</div>\n          </div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "image_ACN3eq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Avantages_de_notre_poudre_capillaire.webp",
+            "alignment": "start",
+            "max_width": 320
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#319e75",
+            "atc_button_text_color": "",
+            "payment_button_background": "#000000",
+            "payment_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_V3xHB6",
+        "title",
+        "image_ACN3eq",
+        "badges",
+        "rating",
+        "payment_terms",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "popup_image_block_ijR4Fk": {
+      "type": "popup-image-block",
+      "name": "Bloc avec image popup",
+      "settings": {
+        "text_line_1": "Vous ne savez pas quelle teinte choisir ?",
+        "text_line_2": "Cliquez ici pour trouver votre teinte",
+        "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
+        "link_color": "#1a1a1a",
+        "background_color": "#f8f8f8",
+        "border_radius": 12,
+        "padding": 0,
+        "font_size_title": 12,
+        "font_size_link": 12,
+        "margin_top": 5,
+        "margin_bottom": 5
+      }
+    },
+    "faq_BkgFKL": {
+      "type": "faq",
+      "blocks": {
+        "item_yCMgKp": {
+          "type": "item",
+          "settings": {
+            "title": "Qu'est-ce qu'une poudre capillaire ?",
+            "content": "<p>Notre poudre capillaire est une solution express pour densifier visuellement les cheveux clairsemés. Composée de fibres naturelles, souvent issues du coton, cette poudre s'accroche instantanément aux cheveux existants pour combler les zones dégarnies. En quelques secondes, elle donne l’illusion d’une chevelure plus dense, sans passer par la case greffe ou traitements médicaux.</p>"
+          }
+        },
+        "item_UdyUxc": {
+          "type": "item",
+          "settings": {
+            "title": "Et si je n’ai plus du tout de cheveux à certaines zones ?",
+            "content": "<p>Même quand le cuir chevelu paraît nu, il reste souvent un léger duvet ou des cheveux très fins invisibles à l’œil nu. Les fibres capillaires s’y fixent facilement et permettent de redonner du volume visuellement. Résultat : les zones clairsemées sont estompées, et la chevelure paraît plus fournie, même en cas de calvitie avancée.</p>"
+          }
+        },
+        "item_AUycHM": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que c’est sans risque pour la peau ?",
+            "content": "<p>La formule est douce et respectueuse du cuir chevelu. Composée à 99 % d’ingrédients d’origine naturelle, elle ne contient ni substances irritantes ni composants agressifs. Elle convient parfaitement aux peaux sensibles et peut être utilisée au quotidien sans inquiétude.</p>"
+          }
+        },
+        "item_MWG4eP": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que ça tient vraiment longtemps ?",
+            "content": "<p>Oui, l'effet tient sans bouger du matin au soir, même en cas de chaleur, de sueur ou d’humidité. Une application suffit pour la journée, et un format de 15 g permet en moyenne une trentaine d’utilisations.</p>"
+          }
+        },
+        "item_4VMcJa": {
+          "type": "item",
+          "settings": {
+            "title": "Comment est-ce que fonctionne la poudre capillaire ?",
+            "content": "<p>Les fibres capillaires sont chargées électrostatiquement pour se fixer naturellement aux cheveux présents, même les plus fins ou clairs. Elles s’accrochent à la fibre capillaire et viennent combler les zones clairsemées en créant un effet de densité immédiat. Grâce à cette fixation naturelle, la tenue est optimale : rien ne bouge, même en cas de pluie, de sport ou de coup de vent.</p>"
+          }
+        },
+        "item_wN44ng": {
+          "type": "item",
+          "settings": {
+            "title": "Comment bien appliquer la poudre capillaire ?",
+            "content": "<p>Sur cheveux propres et bien secs, saupoudrez directement la poudre sur les zones clairsemées. Répartissez-la de manière uniforme en tapotant légèrement avec les doigts ou un applicateur adapté. Pour une tenue renforcée, vous pouvez terminer par une légère brume fixatrice. Le résultat est visible en quelques secondes seulement.</p>"
+          }
+        },
+        "item_fbjJXx": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont les délais de livraison et les conditions de retour ?",
+            "content": "<p>La livraison est gratuite et rapide ! Nous expédions les colis sous 24 à 48h, et la livraison se fait sous 6 à 8 jours ouvrés.</p><p>Si le produit ne vous convient pas, vous disposez d’un délai de 30 jours après réception pour effectuer un retour.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_yCMgKp",
+        "item_UdyUxc",
+        "item_AUycHM",
+        "item_MWG4eP",
+        "item_4VMcJa",
+        "item_wN44ng",
+        "item_fbjJXx"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "<h3>Tout savoir sur la poudre capillaire Namilka Store</h3>",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#ffffff",
+        "accordion_text_color": ""
+      }
+    },
+    "custom_liquid_zcrypk": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"responsive-image-wrapper\">\n  <style>\n    /* Par défaut, cacher la section */\n    .responsive-image-wrapper {\n      display: none;\n    }\n\n    /* Afficher la section seulement sur les écrans de taille mobile */\n    @media (max-width: 768px) {\n      .responsive-image-wrapper {\n        display: block;\n      }\n    }\n  </style>\n\n  <a href=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059\" target=\"_self\">\n    <img class=\"image-mobile lazy-image loaded\" src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059\" data-src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059\" data-srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 414w\" data-sizes=\"(max-width: 414px) 414px, 828px\" alt=\"\" width=\"1000\" height=\"1000\" loading=\"lazy\" decoding=\"async\" srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 414w\" sizes=\"(max-width: 414px) 414px, 828px\">\n  </a>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "before_after_image_QtLKh7": {
+      "type": "before-after-image",
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "AVANT/APRÈS",
+        "content": "",
+        "before_image": "shopify://shop_images/Avant_apres_3_1_65b4481a-589d-4797-8e7e-068ee43e806c.webp",
+        "after_image": "shopify://shop_images/avant_Apres_3_1.webp",
+        "expand_image": false,
+        "text_position": "center",
+        "before_after_text_position": "bottom",
+        "before_text": "AVANT",
+        "after_text": "APRÈS",
+        "drag_initial_position": 50,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#ffffff",
+        "after_text_color": "#ffffff",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
+    "media_grid_ctg6dp": {
+      "type": "media-grid",
+      "blocks": {
+        "image_dGQ8Rp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Avant_apres_1.webp",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_XRNLai": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/avant_Apres_1_2.webp",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_6tjFQL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Avant_apres_2_953fd89c-3491-42fd-8a8d-72e3262383b6.webp",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_DVyrdX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/avant_Apres_2_1.webp",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_dGQ8Rp",
+        "image_XRNLai",
+        "image_6tjFQL",
+        "image_DVyrdX"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "rich_text_MMCPrq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ziX4ij": {
+          "type": "heading",
+          "settings": {
+            "text": "La confiance dont vos cheveux ont besoin",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_ziX4ij"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "text_with_icons_H3Gidz": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_kH4Aq4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Transformation instantanée",
+            "content": "<p>En seulement quelques secondes, les zones dégarnies s’effacent. Pas d’attente, juste un résultat immédiat.<br/><br/></p>"
+          }
+        },
+        "item_Nnghxg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Tenue à toute épreuve",
+            "content": "<p>Conçu pour résister à l’eau, à la transpiration et aux frottements, notre poudre reste en place toute la journée</p>"
+          }
+        },
+        "item_Ke6TFE": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-leaf",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Résultat naturel garanti",
+            "content": "<p>Invisible à l’œil nu, bluffant de réalisme. Une densité naturelle avec des ingrédients d'origines naturelles</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_kH4Aq4",
+        "item_Nnghxg",
+        "item_Ke6TFE"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multiple_images_with_text_GJQMjb": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_jxQnxi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "",
+            "content": "<p>Déjà <strong>+30 000 clients</strong> ont adopté leur teinte parmi nos 6 nuances testées et approuvées.<br/><strong>Et vous, laquelle sera la vôtre ?</strong></p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_jxQnxi"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "meditrust_tableau_UiURp3": {
+      "type": "meditrust-tableau",
+      "blocks": {
+        "table_row_cRAQNE": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "100% naturel",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_FB8VTY": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Résultats visibles",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_d8bXMm": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Waterproof",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_kjThyd": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Anti-frottement",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_qj9dm6": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Application rapide",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_bejxUi": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Miroir intégré",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "table_row_cRAQNE",
+        "table_row_FB8VTY",
+        "table_row_d8bXMm",
+        "table_row_kjThyd",
+        "table_row_qj9dm6",
+        "table_row_bejxUi"
+      ],
+      "name": "Meditrust - Compare Table",
+      "settings": {
+        "selected_theme": "standard",
+        "body_gap": 32,
+        "body_gap_mobile": 32,
+        "content_horizontal_align": "start",
+        "content_horizontal_align_mobile": "center",
+        "heading": "<p><strong>Namilka Store</strong> <strong>vs </strong><em>les autres marques</em></p>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_height": 150,
+        "text": "<p>Nous sommes fiers de la qualité de notre poudre capillaire, nous ne pouvons pas en dire autant des autres…</p>",
+        "custom_image": "shopify://shop_images/Pot_de_poudre_capillaire_1f074731-5c2b-4aab-8dfd-bfb5bcdfec02.webp",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 18,
+        "text_size_mobile": 18,
+        "text_height": 150,
+        "text_mt": 4,
+        "list_mt": 50,
+        "list_mt_mobile": 32,
+        "list_gap": 30,
+        "list_gap_mobile": 30,
+        "list_hide_mobile": true,
+        "icon_size": 28,
+        "icon_size_mobile": 28,
+        "icon_margin_right": 16,
+        "list_text_custom": false,
+        "list_text_font": "josefin_sans_n4",
+        "list_text_size": 20,
+        "list_text_size_mobile": 18,
+        "list_text_height": 150,
+        "button": "",
+        "button_url": "",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 18,
+        "button_size_mobile": 18,
+        "button_height": 100,
+        "button_width": 305,
+        "button_mt": 50,
+        "button_mt_mobile": 32,
+        "button_padding_vertical": 16,
+        "button_padding_vertical_mobile": 16,
+        "button_padding_horizontal": 48,
+        "button_padding_horizontal_mobile": 48,
+        "button_radius": 100,
+        "button_border_thickness": 0,
+        "button_style": "non_outline",
+        "button_position_mobile": "bottom",
+        "table_columns": 2,
+        "table_mt_mobile": 32,
+        "table_column_active": "1",
+        "table_radius": 16,
+        "table_border_thickness": 1,
+        "table_heading_image_size": 100,
+        "table_heading_image_size_mobile": 80,
+        "first_heading": "Namilka Store",
+        "second_heading": "Autres marques",
+        "third_heading": "Troisième",
+        "four_heading": "Quatrième",
+        "table_heading_custom": false,
+        "table_heading_font": "assistant_n4",
+        "table_heading_size": 20,
+        "table_heading_size_mobile": 16,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 18,
+        "table_heading_padding_horizontal_mobile": 18,
+        "table_heading_padding_vertical": 18,
+        "table_heading_padding_vertical_mobile": 18,
+        "table_row_padding_horizontal": 14,
+        "table_row_padding_horizontal_mobile": 12,
+        "table_row_padding_vertical": 16,
+        "table_row_padding_vertical_mobile": 16,
+        "table_row_heading_width_mobile": 66,
+        "table_row_heading_custom": false,
+        "table_row_heading_font": "assistant_n4",
+        "table_row_heading_size": 16,
+        "table_row_heading_size_mobile": 16,
+        "table_row_heading_height": 130,
+        "table_row_heading_align": "left",
+        "table_row_text_custom": false,
+        "table_row_text_font": "assistant_n4",
+        "table_row_text_size": 20,
+        "table_row_text_size_mobile": 16,
+        "table_row_text_height": 130,
+        "table_row_text_align": "center",
+        "table_row_image_size": 24,
+        "table_row_image_size_mobile": 24,
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "icon_color": "#000000",
+        "list_text_color": "#000000",
+        "button_color": "#f0f0f0",
+        "button_hover_color": "#dad0ff",
+        "button_bg_color": "#16142b",
+        "button_bg_hover_color": "#16142b",
+        "button_border_color": "#16142b",
+        "button_border_hover_color": "#16142b",
+        "table_border_color": "#000000",
+        "table_active_border_color": "#000000",
+        "table_heading_color": "#000000",
+        "table_heading_active_color": "#f0f0f0",
+        "table_heading_bg_active_color": "#000000",
+        "table_column_active_bg_color": "#454545",
+        "table_row_heading_color": "#000000",
+        "table_row_text_color": "#000000",
+        "table_row_active_text_color": "#f0f0f0",
+        "background_color": "#f0f0f0",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "1754256783816a0ff5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_BYN6AC": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_BYN6AC"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "popup_image_block_ijR4Fk",
+    "faq_BkgFKL",
+    "custom_liquid_zcrypk",
+    "before_after_image_QtLKh7",
+    "media_grid_ctg6dp",
+    "rich_text_MMCPrq",
+    "text_with_icons_H3Gidz",
+    "multiple_images_with_text_GJQMjb",
+    "meditrust_tableau_UiURp3",
+    "1754256783816a0ff5"
+  ]
+}
