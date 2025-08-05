@@ -390,6 +390,42 @@
         "text_color": ""
       }
     },
+    "impact_text_e7YD3R": {
+      "type": "impact-text",
+      "blocks": {
+        "item_aAbaxK": {
+          "type": "item",
+          "settings": {
+            "title": "10",
+            "subheading": "teintes disponibles",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_aAbaxK"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "multiple_images_with_text_GJQMjb": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -728,6 +764,7 @@
     "media_grid_ctg6dp",
     "rich_text_MMCPrq",
     "text_with_icons_H3Gidz",
+    "impact_text_e7YD3R",
     "multiple_images_with_text_GJQMjb",
     "custom_liquid_8q86TC",
     "impact_text_RkLJPF",
