@@ -36,12 +36,6 @@
           "type": "badges",
           "settings": {}
         },
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
         "payment_terms": {
           "type": "payment_terms",
           "settings": {}
@@ -83,7 +77,6 @@
         "title",
         "image_ACN3eq",
         "badges",
-        "rating",
         "payment_terms",
         "description",
         "variant_picker",
