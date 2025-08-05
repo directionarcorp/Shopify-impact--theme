@@ -441,8 +441,8 @@
           "type": "item",
           "settings": {
             "title": "10",
-            "subheading": "teintes différentes disponibles",
-            "content": "",
+            "subheading": "",
+            "content": "<h3>teintes différentes disponibles</h3>",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": false,
