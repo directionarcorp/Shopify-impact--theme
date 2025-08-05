@@ -231,8 +231,8 @@
         "subheading": "",
         "title": "AVANT/APRÈS",
         "content": "",
-        "before_image": "shopify://shop_images/Avant_apres_3_1_65b4481a-589d-4797-8e7e-068ee43e806c.webp",
-        "after_image": "shopify://shop_images/avant_Apres_3_1.webp",
+        "before_image": "shopify://shop_images/Test_poudre_sur_femme_avant.webp",
+        "after_image": "shopify://shop_images/Test_poudre_sur_femme_apres.webp",
         "expand_image": false,
         "text_position": "center",
         "before_after_text_position": "bottom",
@@ -294,57 +294,11 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
-        },
-        "image_6tjFQL": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Avant_apres_2_953fd89c-3491-42fd-8a8d-72e3262383b6.webp",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_DVyrdX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/avant_Apres_2_1.webp",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
         }
       },
       "block_order": [
         "image_dGQ8Rp",
-        "image_XRNLai",
-        "image_6tjFQL",
-        "image_DVyrdX"
+        "image_XRNLai"
       ],
       "name": "Media grid",
       "settings": {
