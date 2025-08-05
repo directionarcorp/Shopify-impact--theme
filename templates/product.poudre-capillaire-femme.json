@@ -401,7 +401,7 @@
             "content": "",
             "button_text": "",
             "button_url": "",
-            "animate_impact_text": false,
+            "animate_impact_text": true,
             "animate_impact_text_duration": 2
           }
         }
@@ -459,6 +459,7 @@
     },
     "custom_liquid_8q86TC": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
@@ -468,42 +469,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "impact_text_RkLJPF": {
-      "type": "impact-text",
-      "blocks": {
-        "item_iXnRMT": {
-          "type": "item",
-          "settings": {
-            "title": "10",
-            "subheading": "teintes différentes disponibles",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 3.5
-          }
-        }
-      },
-      "block_order": [
-        "item_iXnRMT"
-      ],
-      "name": "Impact text",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
       }
     },
     "meditrust_tableau_UiURp3": {
@@ -616,6 +581,7 @@
         "heading_size_mobile": 32,
         "heading_height": 150,
         "text": "<p>Nous sommes fiers de la qualité de notre poudre capillaire, nous ne pouvons pas en dire autant des autres…</p>",
+        "custom_image": "shopify://shop_images/Pot_de_poudre_capillaire_1f074731-5c2b-4aab-8dfd-bfb5bcdfec02.webp",
         "text_custom": false,
         "text_font": "josefin_sans_n4",
         "text_size": 18,
@@ -767,7 +733,6 @@
     "impact_text_e7YD3R",
     "multiple_images_with_text_GJQMjb",
     "custom_liquid_8q86TC",
-    "impact_text_RkLJPF",
     "meditrust_tableau_UiURp3",
     "1754256783816a0ff5"
   ]
