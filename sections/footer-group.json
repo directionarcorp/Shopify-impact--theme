@@ -128,9 +128,9 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
-            "enable_follow_on_shop": true
+            "title": "Notre volonté",
+            "content": "<p>Namilka Store vous propose la meilleure solution de camouflage possible face à la perte de cheveux et la calvitie, pour hommes et femmes.</p>",
+            "enable_follow_on_shop": false
           }
         }
       },
