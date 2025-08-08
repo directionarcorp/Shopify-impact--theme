@@ -611,6 +611,33 @@
         "button_text_color": ""
       }
     },
+    "1754690930ffd30b09": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_tiNGrf": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "poudre-capillaire-homme"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_tiNGrf"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -713,6 +740,7 @@
     "custom_liquid_ayELGx",
     "custom_liquid_46DDEY",
     "impact_text_UdX9YC",
+    "1754690930ffd30b09",
     "faq"
   ]
 }
