@@ -689,33 +689,6 @@
         "lazy": true
       }
     },
-    "1754256783816a0ff5": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_BYN6AC": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_BYN6AC"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
-    },
     "175468758540b49798": {
       "type": "apps",
       "blocks": {
@@ -804,7 +777,6 @@
     "text_with_icons_H3Gidz",
     "multiple_images_with_text_GJQMjb",
     "meditrust_tableau_UiURp3",
-    "1754256783816a0ff5",
     "175468758540b49798",
     "17546877029ab6d86c"
   ]
