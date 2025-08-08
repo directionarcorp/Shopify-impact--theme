@@ -121,7 +121,7 @@
       "settings": {
         "full_width": true,
         "reduce_width": false,
-        "desktop_row_height": 200,
+        "desktop_row_height": 300,
         "mobile_row_height": 160,
         "background": "",
         "background_gradient": ""
