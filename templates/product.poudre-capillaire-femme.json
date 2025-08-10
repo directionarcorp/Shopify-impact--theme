@@ -714,62 +714,6 @@
         "lazy": true
       }
     },
-    "175485788680db4837": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_KTb7FB": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_KTb7FB"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
-      }
-    },
-    "multiple_images_with_text_gUEar4": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_xxyid3": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Femme_qui_tient_pot_de_poudre_capillaire.webp",
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Cheveux au top, ou remboursé",
-            "content": "",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_xxyid3"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "#f0f0f0",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "media_with_text_yKiHja": {
       "type": "media-with-text",
       "blocks": {
@@ -820,8 +764,6 @@
     "multiple_images_with_text_GJQMjb",
     "custom_liquid_8q86TC",
     "meditrust_tableau_UiURp3",
-    "175485788680db4837",
-    "multiple_images_with_text_gUEar4",
     "media_with_text_yKiHja"
   ]
 }
