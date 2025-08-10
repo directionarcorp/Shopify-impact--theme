@@ -148,6 +148,20 @@
             "content": "<p>Même quand le cuir chevelu paraît nu, il reste souvent un léger duvet ou des cheveux très fins invisibles à l’œil nu. Les fibres capillaires s’y fixent facilement et permettent de redonner du volume visuellement. Résultat : les zones clairsemées sont estompées, et la chevelure paraît plus fournie, même en cas de calvitie avancée.</p>"
           }
         },
+        "item_wN44ng": {
+          "type": "item",
+          "settings": {
+            "title": "Comment bien appliquer la poudre capillaire ?",
+            "content": "<p>Sur cheveux propres et bien secs, saupoudrez directement la poudre sur les zones clairsemées. Répartissez-la de manière uniforme en tapotant légèrement avec les doigts ou un applicateur adapté. Pour une tenue renforcée, vous pouvez terminer par une légère brume fixatrice. Le résultat est visible en quelques secondes seulement.</p>"
+          }
+        },
+        "item_VgMdxH": {
+          "type": "item",
+          "settings": {
+            "title": "Comment enlever la poudre capillaire de ses cheveux ?",
+            "content": "<p>Il vous suffit de laver vos cheveux avec votre shampoing habituel : la poudre disparaît complètement dès le premier lavage.</p>"
+          }
+        },
         "item_AUycHM": {
           "type": "item",
           "settings": {
@@ -169,20 +183,6 @@
             "content": "<p>Les fibres capillaires sont chargées électrostatiquement pour se fixer naturellement aux cheveux présents, même les plus fins ou clairs. Elles s’accrochent à la fibre capillaire et viennent combler les zones clairsemées en créant un effet de densité immédiat. Grâce à cette fixation naturelle, la tenue est optimale : rien ne bouge, même en cas de pluie, de sport ou de coup de vent.</p>"
           }
         },
-        "item_wN44ng": {
-          "type": "item",
-          "settings": {
-            "title": "Comment bien appliquer la poudre capillaire ?",
-            "content": "<p>Sur cheveux propres et bien secs, saupoudrez directement la poudre sur les zones clairsemées. Répartissez-la de manière uniforme en tapotant légèrement avec les doigts ou un applicateur adapté. Pour une tenue renforcée, vous pouvez terminer par une légère brume fixatrice. Le résultat est visible en quelques secondes seulement.</p>"
-          }
-        },
-        "item_VgMdxH": {
-          "type": "item",
-          "settings": {
-            "title": "Comment enlever la poudre capillaire de ses cheveux ?",
-            "content": "<p>Il vous suffit de laver vos cheveux avec votre shampoing habituel : la poudre disparaît complètement dès le premier lavage.</p>"
-          }
-        },
         "item_fbjJXx": {
           "type": "item",
           "settings": {
@@ -194,11 +194,11 @@
       "block_order": [
         "item_yCMgKp",
         "item_UdyUxc",
+        "item_wN44ng",
+        "item_VgMdxH",
         "item_AUycHM",
         "item_MWG4eP",
         "item_4VMcJa",
-        "item_wN44ng",
-        "item_VgMdxH",
         "item_fbjJXx"
       ],
       "name": "FAQ",
