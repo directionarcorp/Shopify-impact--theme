@@ -546,12 +546,22 @@
             "title": "Dr. Julie Fontaine",
             "content": "<p><em>Experte en cosmétologie capillaire<br/></em><br/><em><strong>\"Une avancée notable pour celles et ceux qui veulent dissimuler en un instant les zones clairsemées. Les fibres s’accrochent solidement aux cheveux et restent en place même en cas d’humidité. Grâce à son application express, c’est une solution pratique et efficace au quotidien\"</strong></em></p>"
           }
+        },
+        "item_fWy68R": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Dr. Émilie Rousset",
+            "content": "<p><em>Médecin esthétique et spécialiste anti-âge<br/></em><br/><em><strong>\"J’accompagne régulièrement des patients à la recherche de solutions capillaires à la fois performantes et discrètes. Namilka Store offre un volume immédiat tout en préservant la fibre capillaire, grâce à une formule douce et d’origine naturelle\"</strong></em></p>"
+          }
         }
       },
       "block_order": [
         "item_CB9irB",
         "item_rXBkEh",
-        "item_dcyxDw"
+        "item_dcyxDw",
+        "item_fWy68R"
       ],
       "name": "Images and text scrolling",
       "settings": {
