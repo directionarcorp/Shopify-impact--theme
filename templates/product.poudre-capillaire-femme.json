@@ -523,6 +523,7 @@
         "item_CB9irB": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Image_experte_1.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Camille Dupuis",
@@ -532,6 +533,7 @@
         "item_rXBkEh": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Image_experte_3.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Laura Marchand",
@@ -541,6 +543,7 @@
         "item_dcyxDw": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Image_experte_4.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Élise Caron",
@@ -550,6 +553,7 @@
         "item_fWy68R": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Image_experte_2.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Anaïs Lefèvre",
