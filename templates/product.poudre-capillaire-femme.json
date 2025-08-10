@@ -526,7 +526,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Claire Morel",
-            "content": "<p><em>Dermatologue spécialisée en soins capillaires</em><br/><br/>\"En tant que dermatologue, je conseille régulièrement la poudre de Namilka Store à mes patients confrontés à une perte de densité capillaire. Sa composition douce et respectueuse du cuir chevelu permet d’obtenir un résultat immédiat, naturel et harmonieux. C’est une solution simple et efficace pour redonner du volume sans effort\"</p>"
+            "content": "<p><em>Dermatologue spécialisée en soins capillaires<br/><br/></em><em><strong>\"En tant que dermatologue, je conseille régulièrement la poudre de Namilka Store à mes patients confrontés à une perte de densité capillaire. Sa composition douce et respectueuse du cuir chevelu permet d’obtenir un résultat immédiat, naturel et harmonieux. C’est une solution simple et efficace pour redonner du volume sans effort\"</strong></em></p>"
           }
         },
         "item_rXBkEh": {
@@ -534,14 +534,24 @@
           "settings": {
             "icon": "none",
             "icon_width": 48,
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "title": "Dr. Sophie Bernard",
+            "content": "<p><em>Trichologue et spécialiste de la santé capillaire<br/></em><br/><em><strong>\"De nombreux patients souhaitent éviter les solutions lourdes ou invasives pour camoufler un manque de densité. Namilka Store représente une alternative idéale : application rapide, tolérance optimale pour le cuir chevelu et rendu naturel immédiat\"</strong></em></p>"
+          }
+        },
+        "item_dcyxDw": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Dr. Julie Fontaine",
+            "content": "<p><em>Experte en cosmétologie capillaire<br/></em><br/><em><strong>\"Une avancée notable pour celles et ceux qui veulent dissimuler en un instant les zones clairsemées. Les fibres s’accrochent solidement aux cheveux et restent en place même en cas d’humidité. Grâce à son application express, c’est une solution pratique et efficace au quotidien\"</strong></em></p>"
           }
         }
       },
       "block_order": [
         "item_CB9irB",
-        "item_rXBkEh"
+        "item_rXBkEh",
+        "item_dcyxDw"
       ],
       "name": "Images and text scrolling",
       "settings": {
