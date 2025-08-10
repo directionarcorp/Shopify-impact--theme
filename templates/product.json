@@ -176,6 +176,13 @@
             "content": "<p>Sur cheveux propres et bien secs, saupoudrez directement la poudre sur les zones clairsemées. Répartissez-la de manière uniforme en tapotant légèrement avec les doigts ou un applicateur adapté. Pour une tenue renforcée, vous pouvez terminer par une légère brume fixatrice. Le résultat est visible en quelques secondes seulement.</p>"
           }
         },
+        "item_VgMdxH": {
+          "type": "item",
+          "settings": {
+            "title": "Comment enlever la poudre capillaire de ses cheveux ?",
+            "content": "<p>Il vous suffit de laver vos cheveux avec votre shampoing habituel : la poudre disparaît complètement dès le premier lavage.</p>"
+          }
+        },
         "item_fbjJXx": {
           "type": "item",
           "settings": {
@@ -191,6 +198,7 @@
         "item_MWG4eP",
         "item_4VMcJa",
         "item_wN44ng",
+        "item_VgMdxH",
         "item_fbjJXx"
       ],
       "name": "FAQ",
