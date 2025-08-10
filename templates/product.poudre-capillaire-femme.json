@@ -492,6 +492,31 @@
         "text_color": ""
       }
     },
+    "1754858949ee3b842b": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_9XKgNb": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_9XKgNb"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "meditrust_tableau_UiURp3": {
       "type": "meditrust-tableau",
       "blocks": {
@@ -763,6 +788,7 @@
     "impact_text_e7YD3R",
     "multiple_images_with_text_GJQMjb",
     "custom_liquid_8q86TC",
+    "1754858949ee3b842b",
     "meditrust_tableau_UiURp3",
     "media_with_text_yKiHja"
   ]
