@@ -118,45 +118,17 @@
         "margin_bottom": 5
       }
     },
-    "slideshow_binicU": {
-      "type": "slideshow",
-      "blocks": {
-        "image_PAUxq6": {
-          "type": "image",
-          "settings": {
-            "mobile_image": "shopify://shop_images/Avantages_Namilka_Store_dc46ce44-f09c-4e48-911e-595669ede855.webp",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_PAUxq6"
-      ],
-      "name": "Slideshow",
+    "custom_liquid_9gnc7W": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": true,
-        "image_size": "auto",
-        "controls_type": "dots",
-        "transition_type": "fade_with_text",
-        "autoplay": false,
-        "cycle_speed": 6,
-        "background": "#F2F2F2",
-        "background_gradient": ""
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"responsive-image-wrapper\">\n  <style>\n    /* Par défaut, cacher la section */\n    .responsive-image-wrapper {\n      display: none;\n    }\n\n    /* Afficher la section seulement sur les écrans de taille mobile */\n    @media (max-width: 768px) {\n      .responsive-image-wrapper {\n        display: block;\n      }\n    }\n  </style>\n\n  <a href=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Avantages_Namilka_Store.webp?v=1754844577\" target=\"_self\">\n    <img class=\"image-mobile lazy-image loaded\" src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Avantages_Namilka_Store.webp?v=1754844577\" data-src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Avantages_Namilka_Store.webp?v=1754844577\" data-srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Avantages_Namilka_Store.webp?v=1754844577 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Avantages_Namilka_Store.webp?v=1754844577 414w\" data-sizes=\"(max-width: 414px) 414px, 828px\" alt=\"\" width=\"1000\" height=\"1000\" loading=\"lazy\" decoding=\"async\" srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Avantages_Namilka_Store.webp?v=1754844577 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/Avantages_Namilka_Store.webp?v=1754844577 414w\" sizes=\"(max-width: 414px) 414px, 828px\">\n  </a>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "faq_BkgFKL": {
@@ -759,7 +731,7 @@
   "order": [
     "main",
     "popup_image_block_ijR4Fk",
-    "slideshow_binicU",
+    "custom_liquid_9gnc7W",
     "faq_BkgFKL",
     "custom_liquid_zcrypk",
     "before_after_image_QtLKh7",
