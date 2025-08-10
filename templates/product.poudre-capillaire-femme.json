@@ -517,6 +517,46 @@
         "review_button_text_color": "#ffffff"
       }
     },
+    "images_with_text_scrolling_TEQwwD": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_CB9irB": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Dr. Claire Morel",
+            "content": "<p><em>Dermatologue spécialisée en soins capillaires</em><br/><br/><br/>\"En tant que dermatologue, je conseille régulièrement la poudre de Namilka Store à mes patients confrontés à une perte de densité capillaire. Sa composition douce et respectueuse du cuir chevelu permet d’obtenir un résultat immédiat, naturel et harmonieux. C’est une solution simple et efficace pour redonner du volume sans effort\"</p>"
+          }
+        },
+        "item_rXBkEh": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_CB9irB",
+        "item_rXBkEh"
+      ],
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "meditrust_tableau_UiURp3": {
       "type": "meditrust-tableau",
       "blocks": {
@@ -789,6 +829,7 @@
     "multiple_images_with_text_GJQMjb",
     "custom_liquid_8q86TC",
     "1754858949ee3b842b",
+    "images_with_text_scrolling_TEQwwD",
     "meditrust_tableau_UiURp3",
     "media_with_text_yKiHja"
   ]
