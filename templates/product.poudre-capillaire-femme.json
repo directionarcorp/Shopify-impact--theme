@@ -714,18 +714,16 @@
         "lazy": true
       }
     },
-    "1754256783816a0ff5": {
+    "175485788680db4837": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_featured_carousel_BYN6AC": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
+        "judge_me_reviews_review_widget_KTb7FB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
-        "judge_me_reviews_featured_carousel_BYN6AC"
+        "judge_me_reviews_review_widget_KTb7FB"
       ],
       "settings": {
         "full_width": true,
@@ -739,6 +737,37 @@
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
+      }
+    },
+    "multiple_images_with_text_gUEar4": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_xxyid3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Femme_qui_tient_pot_de_poudre_capillaire.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Cheveux au top, ou remboursé",
+            "content": "<p><strong>Chez Namilka Store, nous croyons en notre poudre capillaire autant que vous allez l’aimer.</strong><br/>C’est pourquoi nous proposons une garantie sérénité de 30 jours : essayez-la, et si elle ne vous convient pas, nous vous remboursons intégralement, conformément à notre politique de retour et de remboursement.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_xxyid3"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     }
   },
@@ -756,6 +785,7 @@
     "multiple_images_with_text_GJQMjb",
     "custom_liquid_8q86TC",
     "meditrust_tableau_UiURp3",
-    "1754256783816a0ff5"
+    "175485788680db4837",
+    "multiple_images_with_text_gUEar4"
   ]
 }
