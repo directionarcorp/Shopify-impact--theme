@@ -9878,3 +9878,24 @@ split-lines {
   display: -webkit-box;
   overflow: hidden;
 }
+/* Harmoniser la hauteur du bouton Apple Pay avec le bouton Ajouter au panier */
+.shopify-payment-button__button {
+  min-height: 50px; /* adapte à la hauteur de ton bouton ATC */
+  height: 50px !important; /* forcer la hauteur */
+  line-height: 50px !important;
+  border-radius: 6px; /* adapte si besoin */
+  width: 100%;
+}
+
+/* S'assurer que le conteneur ne compresse pas le bouton */
+.shopify-payment-button {
+  width: 100%;
+}
+
+/* Variante : si le thème applique un style inline qui écrase le tien */
+.shopify-payment-button__button,
+.shopify-payment-button__button--unbranded {
+  min-height: 50px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+}
