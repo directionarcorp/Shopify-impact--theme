@@ -32,6 +32,12 @@
             "max_width": 320
           }
         },
+        "price_kYXi9D": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
@@ -76,6 +82,7 @@
         "liquid_V3xHB6",
         "title",
         "image_ACN3eq",
+        "price_kYXi9D",
         "badges",
         "payment_terms",
         "description",
@@ -493,7 +500,10 @@
       "blocks": {
         "judge_me_reviews_review_widget_KJVEwM": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
