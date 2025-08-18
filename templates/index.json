@@ -93,10 +93,10 @@
         "image_fJkmRb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Poudrecoiffante.webp",
+            "image": "shopify://shop_images/pinceaud_applicationpoudrecapillaire.webp",
             "title": "",
             "heading_tag": "h4",
-            "link_url": "",
+            "link_url": "shopify://products/pinceau-dapplication-pour-poudre-capillaire",
             "link_text": "",
             "mobile_text_position": "place-self-center text-center",
             "desktop_column_span": 1,
@@ -617,7 +617,9 @@
         "judge_me_reviews_review_widget_homepage_tiNGrf": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "product": "poudre-capillaire-homme"
+            "product": "poudre-capillaire-homme",
+            "review_data": "sample_data",
+            "max_width": 1200
           }
         }
       },
