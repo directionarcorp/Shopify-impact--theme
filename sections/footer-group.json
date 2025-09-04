@@ -87,6 +87,7 @@
     },
     "contact_J7Yq34": {
       "type": "contact",
+      "disabled": true,
       "name": "Contact form",
       "settings": {
         "full_width": true,
