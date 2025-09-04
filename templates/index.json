@@ -15,8 +15,6 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Camoufler_calvitie.webp",
-            "mobile_image": "shopify://shop_images/Soigner_calvitie_693af4c3-9dbc-442a-a142-b9ea7c9ab474.webp",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -71,7 +69,6 @@
         "image_xnd4HF": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Camouflagecapillaire.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "shopify://products/poudre-capillaire-homme",
@@ -93,7 +90,6 @@
         "image_fJkmRb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Pinceau_d_application_photo_produit_74396c28-62a2-4709-9dca-5d1a13a2f00d.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "shopify://products/pinceau-dapplication-pour-poudre-capillaire",
@@ -205,8 +201,8 @@
         "subheading": "",
         "title": "AVANT/APRÈS",
         "content": "",
-        "before_image": "shopify://shop_images/Avant_apres_3_1_65b4481a-589d-4797-8e7e-068ee43e806c.webp",
-        "after_image": "shopify://shop_images/avant_Apres_3_1.webp",
+        "before_image": "shopify://shop_images/Cheveux_1_avant.webp",
+        "after_image": "shopify://shop_images/Cheveux_1_apres.webp",
         "expand_image": false,
         "text_position": "center",
         "before_after_text_position": "bottom",
@@ -228,7 +224,6 @@
         "item-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Avant_apres_1.webp",
             "title": "",
             "heading_tag": "h6",
             "link_url": "",
@@ -250,7 +245,6 @@
         "item-3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/avant_Apres_1_2.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -272,7 +266,6 @@
         "image_cGb7pD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Avant_apres_2_953fd89c-3491-42fd-8a8d-72e3262383b6.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -294,7 +287,6 @@
         "image_pLDTgz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/avant_Apres_2_1.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -404,7 +396,6 @@
         "16644243327ba53d2a-0": {
           "type": "quote",
           "settings": {
-            "logo": "shopify://shop_images/elle_300xlogo.png",
             "logo_width": 100,
             "author": "",
             "content": "Le produit miracle dont on nous a énormément parlé",
@@ -415,7 +406,6 @@
         "16644243327ba53d2a-1": {
           "type": "quote",
           "settings": {
-            "logo": "shopify://shop_images/LOGO-GENERIQUE.png",
             "logo_width": 100,
             "author": "",
             "content": "Ce qu'il y a de mieux pour retrouvre confiance en soi en tant qu'homme",
@@ -446,7 +436,6 @@
         "item_MFUjDV": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/coiffeur_avec_pot_de_poudre_1.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "",
@@ -456,7 +445,6 @@
         "item_TDfy4a": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/coifferu_avec_pot_de_poudre_2.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "",
@@ -466,7 +454,6 @@
         "item_eXNP43": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/coiffeur_avec_pot_de_poudre_3.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "",
@@ -499,7 +486,6 @@
         "image_WizbAA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/pot_poudre_capillaire.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -613,19 +599,6 @@
     },
     "1754690930ffd30b09": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_homepage_tiNGrf": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "product": "poudre-capillaire-homme",
-            "review_data": "sample_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_homepage_tiNGrf"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
