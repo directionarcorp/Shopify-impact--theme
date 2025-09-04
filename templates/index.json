@@ -224,6 +224,7 @@
         "item-2": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Cheveux_2_avant.webp",
             "title": "",
             "heading_tag": "h6",
             "link_url": "",
@@ -245,6 +246,7 @@
         "item-3": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Cheveux_2_apres.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -266,6 +268,7 @@
         "image_cGb7pD": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Cheveux_3_avant.jpg",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -287,6 +290,7 @@
         "image_pLDTgz": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Cheveux_3_apres.jpg",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
