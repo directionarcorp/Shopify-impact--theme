@@ -119,7 +119,7 @@
             "content": ""
           }
         },
-        "links": {
+        "links_d3BLp7": {
           "type": "links",
           "settings": {
             "menu": "footer",
@@ -133,21 +133,12 @@
             "content": "<p>NK vous propose la meilleure solution de camouflage possible face à la perte de cheveux et la calvitie, pour hommes et femmes.</p>",
             "enable_follow_on_shop": false
           }
-        },
-        "text_XftUwP": {
-          "type": "text",
-          "settings": {
-            "title": "Contact",
-            "content": "",
-            "enable_follow_on_shop": true
-          }
         }
       },
       "block_order": [
         "newsletter",
-        "links",
-        "text",
-        "text_XftUwP"
+        "links_d3BLp7",
+        "text"
       ],
       "settings": {
         "show_social_media": true,
