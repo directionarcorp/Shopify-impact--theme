@@ -251,6 +251,8 @@
         "subheading": "",
         "title": "AVANT/APRÈS",
         "content": "",
+        "before_image": "shopify://shop_images/Cheveux_1_avant.webp",
+        "after_image": "shopify://shop_images/Cheveux_1_apres.webp",
         "expand_image": false,
         "text_position": "center",
         "before_after_text_position": "bottom",
@@ -272,6 +274,7 @@
         "image_dGQ8Rp": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Cheveux_3_avant.jpg",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -293,6 +296,7 @@
         "image_XRNLai": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Cheveux_3_apres.jpg",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -314,6 +318,7 @@
         "image_6tjFQL": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Cheveux_2_avant.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -335,6 +340,7 @@
         "image_DVyrdX": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Cheveux_2_apres.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
