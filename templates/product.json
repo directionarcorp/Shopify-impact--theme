@@ -27,7 +27,6 @@
         "image_ACN3eq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Avantages_de_notre_poudre_capillaire.webp",
             "alignment": "start",
             "max_width": 320
           }
@@ -114,7 +113,7 @@
       "settings": {
         "text_line_1": "Vous ne savez pas quelle teinte choisir ?",
         "text_line_2": "Cliquez ici pour trouver votre teinte",
-        "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
+        "image": "shopify://shop_images/Choisir_teinte_poudre_capillaire.webp",
         "link_color": "#1a1a1a",
         "background_color": "#f8f8f8",
         "border_radius": 12,
@@ -252,8 +251,6 @@
         "subheading": "",
         "title": "AVANT/APRÈS",
         "content": "",
-        "before_image": "shopify://shop_images/Avant_apres_3_1_65b4481a-589d-4797-8e7e-068ee43e806c.webp",
-        "after_image": "shopify://shop_images/avant_Apres_3_1.webp",
         "expand_image": false,
         "text_position": "center",
         "before_after_text_position": "bottom",
@@ -275,7 +272,6 @@
         "image_dGQ8Rp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Avant_apres_1.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -297,7 +293,6 @@
         "image_XRNLai": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/avant_Apres_1_2.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -319,7 +314,6 @@
         "image_6tjFQL": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Avant_apres_2_953fd89c-3491-42fd-8a8d-72e3262383b6.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -341,7 +335,6 @@
         "image_DVyrdX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/avant_Apres_2_1.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -470,7 +463,6 @@
         "item_jxQnxi": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Choisir_sa_teinte_de_poudre_capillaire.webp",
             "image_rotation_degrees": -2,
             "subheading": "",
             "title": "",
@@ -497,18 +489,6 @@
     },
     "175468758540b49798": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_KJVEwM": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_KJVEwM"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -633,7 +613,6 @@
         "heading_size_mobile": 32,
         "heading_height": 150,
         "text": "<p>Nous sommes fiers de la qualité de notre poudre capillaire, nous ne pouvons pas en dire autant des autres…</p>",
-        "custom_image": "shopify://shop_images/Pot_de_poudre_capillaire_1f074731-5c2b-4aab-8dfd-bfb5bcdfec02.webp",
         "text_custom": false,
         "text_font": "josefin_sans_n4",
         "text_size": 18,
