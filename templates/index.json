@@ -400,6 +400,7 @@
         "16644243327ba53d2a-0": {
           "type": "quote",
           "settings": {
+            "logo": "shopify://shop_images/elle_300xlogo.webp",
             "logo_width": 100,
             "author": "",
             "content": "Le produit miracle dont on nous a énormément parlé",
@@ -410,6 +411,7 @@
         "16644243327ba53d2a-1": {
           "type": "quote",
           "settings": {
+            "logo": "shopify://shop_images/LOGO-GENERIQUE.webp",
             "logo_width": 100,
             "author": "",
             "content": "Ce qu'il y a de mieux pour retrouvre confiance en soi en tant qu'homme",
