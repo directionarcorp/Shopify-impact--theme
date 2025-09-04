@@ -133,12 +133,21 @@
             "content": "<p>Namilka Store vous propose la meilleure solution de camouflage possible face à la perte de cheveux et la calvitie, pour hommes et femmes.</p>",
             "enable_follow_on_shop": false
           }
+        },
+        "text_XftUwP": {
+          "type": "text",
+          "settings": {
+            "title": "Contact",
+            "content": "<p>contact@namilka-store.com</p><h3>07 80 90 39 85</h3>",
+            "enable_follow_on_shop": true
+          }
         }
       },
       "block_order": [
         "newsletter",
         "links",
-        "text"
+        "text",
+        "text_XftUwP"
       ],
       "settings": {
         "show_social_media": true,
