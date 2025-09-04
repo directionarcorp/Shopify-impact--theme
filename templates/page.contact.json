@@ -37,6 +37,29 @@
         "button_text_color": ""
       }
     },
+    "rich_text_iPxJRF": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_PETFkK": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>contact@namilka-store.com</p><p>07 80 90 39 85</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_PETFkK"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "contact_xJR8Fn": {
       "type": "contact",
       "name": "Contact form",
@@ -62,6 +85,7 @@
   "order": [
     "main",
     "contact",
+    "rich_text_iPxJRF",
     "contact_xJR8Fn"
   ]
 }
