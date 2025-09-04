@@ -493,6 +493,7 @@
         "image_WizbAA": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/pot_de_poudre_capillaire.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
