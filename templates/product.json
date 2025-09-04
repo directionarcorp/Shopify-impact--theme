@@ -469,6 +469,7 @@
         "item_jxQnxi": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Choisir_teinte_poudre_capillaire.webp",
             "image_rotation_degrees": -2,
             "subheading": "",
             "title": "",
