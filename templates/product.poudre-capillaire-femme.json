@@ -153,18 +153,18 @@
             "content": "<p>Absolument. La poudre NK est compatible avec toutes les colorations et ne modifie pas la teinte de vos cheveux. Elle existe en plusieurs coloris, il ne reste plus qu'à l’adapter à votre nuance.</p>"
           }
         },
+        "item_AUycHM": {
+          "type": "item",
+          "settings": {
+            "title": "La poudre capillaire résiste-t-elle à l'eau, la transpiration et au vent ?",
+            "content": "<p>Oui, une fois appliquée, elle reste en place toute la journée. Elle tient même en cas de chaleur, d’eau ou de coup de vent.</p>"
+          }
+        },
         "item_WGtjHQ": {
           "type": "item",
           "settings": {
             "title": "Comment enlever la poudre capillaire de ses cheveux ?",
             "content": "<p>Il vous suffit de laver vos cheveux avec votre shampoing habituel. La poudre disparaît complètement dès le premier lavage.</p>"
-          }
-        },
-        "item_AUycHM": {
-          "type": "item",
-          "settings": {
-            "title": "La poudre capillaire résiste-t-elle à la transpiration et au vent ?",
-            "content": "<p>Oui, une fois appliquée, elle reste en place toute la journée. Elle tient même en cas de chaleur, d’eau ou de coup de vent.</p>"
           }
         },
         "item_MWG4eP": {
@@ -193,8 +193,8 @@
         "item_yCMgKp",
         "item_UdyUxc",
         "item_wN44ng",
-        "item_WGtjHQ",
         "item_AUycHM",
+        "item_WGtjHQ",
         "item_MWG4eP",
         "item_4VMcJa",
         "item_fbjJXx"
