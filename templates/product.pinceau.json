@@ -1,0 +1,847 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_V3xHB6": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-info__liquid\" bis_skin_checked=\"1\">\n            <div style=\"display: flex; align-items: center; font-family: 'DIN Next', Arial, sans-serif; font-size: 13px;\" bis_skin_checked=\"1\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0920/6172/9096/files/etoiles_avis_trustpilot.webp?v=1757089979\" alt=\"Trustpilot Stars\" style=\"width: 100px; height: auto; margin-right: 10px;\">\n  <span style=\"color: #1a1a1a; font-weight: bold;\">\n    + de 30 000 <span style=\"font-weight: normal;\"> clients satisfaits !</span>\n  </span>\n</div>\n          </div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "image_ACN3eq": {
+          "type": "image",
+          "settings": {
+            "alignment": "start",
+            "max_width": 320
+          }
+        },
+        "price_kYXi9D": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#319e75",
+            "atc_button_text_color": "#ffffff",
+            "payment_button_background": "#000000",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_kWVWWF": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product and product.available %}\n  <!-- On réutilise le même conteneur que le bouton ATC du thème Impact -->\n  <div class=\"product-form__buttons nk-dynamic-checkout-block\">\n    {% form 'product', product, id: 'nk-dynamic-checkout', class: 'nk-dynamic-checkout' %}\n      <input type=\"hidden\" name=\"id\" value=\"{{ product.selected_or_first_available_variant.id }}\">\n      {{ form | payment_button }}\n    {% endform %}\n  </div>\n\n  <style>\n    /* === Forcer la pleine largeur comme le bouton ATC Impact === */\n    .nk-dynamic-checkout-block {\n      width: 100% !important;\n      max-width: 100% !important;\n      margin: 0 !important;\n      padding: 0 !important;\n      display: block;\n    }\n\n    /* Certains thèmes enveloppent le bloc Custom liquid avec un wrapper qui ajoute du padding max-width\n       -> on neutralise ces contraintes AU SEIN du bloc */\n    .nk-dynamic-checkout-block,\n    .nk-dynamic-checkout-block > * {\n      max-width: 100% !important;\n      box-sizing: border-box;\n    }\n\n    /* Conteneur injecté par Shopify */\n    .nk-dynamic-checkout .shopify-payment-button {\n      width: 100% !important;\n      max-width: 100% !important;\n      display: flex !important;\n      justify-content: center;\n      align-items: center;\n    }\n\n    /* Le bouton dynamique lui-même (Apple Pay / Acheter maintenant) */\n    .nk-dynamic-checkout .shopify-payment-button__button {\n      display: flex !important;\n      justify-content: center;\n      align-items: center;\n      width: 100% !important;\n      max-width: 100% !important;\n      min-height: 52px;           /* aligne la hauteur avec ATC */\n      border-radius: 9999px;      /* arrondi style Impact */\n      padding: 0 16px;\n      font-weight: 600;\n      line-height: normal;\n      box-sizing: border-box;\n    }\n\n    /* Optionnel : masquer \"Plus d’options de paiement\" pour garder un seul CTA pleine largeur */\n    .nk-dynamic-checkout .shopify-payment-button__more-options {\n      display: none !important;\n    }\n\n    /* Cas fréquent : certains thèmes mettent les enfants en inline-block => on force block/100% */\n    .product-form__buttons > .nk-dynamic-checkout,\n    .product-form__buttons > .nk-dynamic-checkout * {\n      width: 100% !important;\n      max-width: 100% !important;\n    }\n  </style>\n\n  <script>\n    (function() {\n      /* Synchronise la variante du bouton dynamique avec le sélecteur principal */\n      var mainVariantInput = document.querySelector('form[action*=\"/cart/add\"] input[name=\"id\"]');\n      var myVariantInput   = document.querySelector('#nk-dynamic-checkout input[name=\"id\"]');\n\n      function syncVariant() {\n        if (mainVariantInput && myVariantInput && mainVariantInput.value) {\n          myVariantInput.value = mainVariantInput.value;\n        }\n      }\n\n      if (mainVariantInput && myVariantInput) {\n        ['change','input'].forEach(function(evt){\n          mainVariantInput.addEventListener(evt, syncVariant, { passive: true });\n        });\n        var mo = new MutationObserver(syncVariant);\n        mo.observe(mainVariantInput, { attributes: true, attributeFilter: ['value'] });\n        syncVariant();\n      }\n    })();\n  </script>\n{% endif %}"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_V3xHB6",
+        "title",
+        "image_ACN3eq",
+        "price_kYXi9D",
+        "badges",
+        "payment_terms",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "liquid_kWVWWF"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "17570598884f9a7a69": {
+      "type": "apps",
+      "blocks": {
+        "essential_trust_badges_app_block_QXifaQ": {
+          "type": "shopify://apps/essential-trust-badges/blocks/app-block/0ff65b25-07e1-408e-950f-f54dd3d1751b",
+          "settings": {
+            "banner_display": "all",
+            "banner_id": "aaa4700e-1973-4d05-a645-0ed7a645f905"
+          }
+        }
+      },
+      "block_order": [
+        "essential_trust_badges_app_block_QXifaQ"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "background": "#f0f0f0",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "popup_image_block_ijR4Fk": {
+      "type": "popup-image-block",
+      "name": "Bloc avec image popup",
+      "settings": {
+        "text_line_1": "Vous ne savez pas quelle teinte choisir ?",
+        "text_line_2": "Cliquez ici pour trouver votre teinte",
+        "image": "shopify://shop_images/Choisir_teinte_poudre_capillaire.webp",
+        "link_color": "#1a1a1a",
+        "background_color": "#f8f8f8",
+        "border_radius": 12,
+        "padding": 0,
+        "font_size_title": 12,
+        "font_size_link": 12,
+        "margin_top": 5,
+        "margin_bottom": 5
+      }
+    },
+    "custom_liquid_9gnc7W": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"responsive-image-wrapper\">\n  <style>\n    /* Par défaut, cacher la section */\n    .responsive-image-wrapper {\n      display: none;\n    }\n\n    /* Afficher la section seulement sur les écrans de taille mobile */\n    @media (max-width: 768px) {\n      .responsive-image-wrapper {\n        display: block;\n      }\n    }\n  </style>\n\n  <a href=\"https://cdn.shopify.com/s/files/1/0920/6172/9096/files/Avantages_boutique_NK_Hair.webp?v=1757090345\" target=\"_self\">\n    <img class=\"image-mobile lazy-image loaded\" src=\"https://cdn.shopify.com/s/files/1/0920/6172/9096/files/Avantages_boutique_NK_Hair.webp?v=1757090345\" data-src=\"https://cdn.shopify.com/s/files/1/0920/6172/9096/files/Avantages_boutique_NK_Hair.webp?v=1757090345\" data-srcset=\"https://cdn.shopify.com/s/files/1/0920/6172/9096/files/Avantages_boutique_NK_Hair.webp?v=1757090345 828w,\n                     https://cdn.shopify.com/s/files/1/0920/6172/9096/files/Avantages_boutique_NK_Hair.webp?v=1757090345 414w\" data-sizes=\"(max-width: 414px) 414px, 828px\" alt=\"\" width=\"1000\" height=\"1000\" loading=\"lazy\" decoding=\"async\" srcset=\"https://cdn.shopify.com/s/files/1/0920/6172/9096/files/Avantages_boutique_NK_Hair.webp?v=1757090345 828w,\n                     https://cdn.shopify.com/s/files/1/0920/6172/9096/files/Avantages_boutique_NK_Hair.webp?v=1757090345 414w\" sizes=\"(max-width: 414px) 414px, 828px\">\n  </a>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_BkgFKL": {
+      "type": "faq",
+      "blocks": {
+        "item_yCMgKp": {
+          "type": "item",
+          "settings": {
+            "title": "La poudre capillaire : c'est quoi ?",
+            "content": "<p>La poudre capillaire NK est un produit conçu pour redonner instantanément du volume aux cheveux clairsemés. Elle est composée de micro-fibres d’origine naturelle, qui se fixent par électrostatique sur la chevelure déjà présente. Les zones dégarnies paraissent immédiatement plus fournies et homogènes. Cette solution rapide permet d’obtenir un effet densité en quelques instants, sans recourir à une greffe ou à des soins lourds.</p>"
+          }
+        },
+        "item_UdyUxc": {
+          "type": "item",
+          "settings": {
+            "title": "La poudre fonctionne-t-elle même sur des zones très dégarnies ?",
+            "content": "<p>Oui. Même lorsque certaines parties du cuir chevelu semblent totalement vides, il subsiste presque toujours de très fins cheveux, parfois invisibles à l’œil nu. Les micro-fibres de la poudre NK s’y accrochent naturellement et créent un effet d’épaisseur immédiat. L’aspect clairsemé est alors masqué, donnant l’impression d’une chevelure plus homogène, même en cas de perte capillaire marquée.</p>"
+          }
+        },
+        "item_wN44ng": {
+          "type": "item",
+          "settings": {
+            "title": "Quelle est la meilleure façon d’utiliser la poudre capillaire NK ?",
+            "content": "<p>Pour obtenir le meilleur rendu, appliquez la poudre NK sur des cheveux parfaitement secs. Saupoudrez délicatement sur les zones où la densité est réduite, puis répartissez les fibres avec un léger geste de la main ou à l’aide d’un applicateur prévu à cet effet. Un voile de spray fixant peut ensuite être utilisé afin de prolonger la tenue tout au long de la journée. L’effet volume apparaît immédiatement, sans effort.</p>"
+          }
+        },
+        "item_VgMdxH": {
+          "type": "item",
+          "settings": {
+            "title": "Comment retirer la poudre capillaire de sa chevelure ?",
+            "content": "<p>Rien de plus simple ! Un shampoing classique suffit. Lors du lavage, les fibres se détachent naturellement et s’éliminent dès le premier rinçage, sans laisser de résidus.</p>"
+          }
+        },
+        "item_AUycHM": {
+          "type": "item",
+          "settings": {
+            "title": "La poudre NK est-elle sans risque pour la peau ?",
+            "content": "<p>La poudre capillaire NK est spécialement conçue pour respecter aussi bien les cheveux que la peau. Sa composition majoritairement naturelle exclut les ingrédients agressifs ou irritants. Elle convient donc aux cuirs chevelus sensibles et peut s’appliquer chaque jour sans risque d’irritation.</p>"
+          }
+        },
+        "item_MWG4eP": {
+          "type": "item",
+          "settings": {
+            "title": "La poudre capillaire NK reste-t-elle en place toute la journée ?",
+            "content": "<p>Absolument ! Une seule application assure un effet densité qui dure du matin jusqu’au soir, sans s’altérer avec la chaleur, l’humidité ou la transpiration. En moyenne, un flacon permet plusieurs semaines d’utilisation régulière, avec environ une trentaine d’applications.</p>"
+          }
+        },
+        "item_4VMcJa": {
+          "type": "item",
+          "settings": {
+            "title": "Comment agit la poudre capillaire NK ?",
+            "content": "<p>La poudre NK contient des micro-fibres qui se fixent instantanément aux cheveux grâce à une charge électrostatique naturelle. Même les cheveux très fins ou clairs attirent ces fibres, qui comblent visuellement les zones moins fournies. En quelques secondes, la chevelure paraît plus dense et homogène. Une fois appliquées, les fibres restent en place tout au long de la journée, résistantes au vent, à l’humidité et aux mouvements.</p>"
+          }
+        },
+        "item_fbjJXx": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont nos délais de livraison et nos conditions de retour ?",
+            "content": "<p>Chez NK, l’expédition est assurée sous 24 à 48h après votre commande. La livraison, gratuite pour tous nos clients, s’effectue généralement sous 6 à 8 jours ouvrés.<br/><br/>Si vous changez d’avis, vous disposez de 30 jours à compter de la réception pour nous retourner le produit et obtenir un remboursement.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_yCMgKp",
+        "item_UdyUxc",
+        "item_wN44ng",
+        "item_VgMdxH",
+        "item_AUycHM",
+        "item_MWG4eP",
+        "item_4VMcJa",
+        "item_fbjJXx"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "<h2>NK Hair répond à toutes vos questions</h2>",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#ffffff",
+        "accordion_text_color": ""
+      }
+    },
+    "custom_liquid_zcrypk": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div class=\"responsive-image-wrapper\">\n  <style>\n    /* Par défaut, cacher la section */\n    .responsive-image-wrapper {\n      display: none;\n    }\n\n    /* Afficher la section seulement sur les écrans de taille mobile */\n    @media (max-width: 768px) {\n      .responsive-image-wrapper {\n        display: block;\n      }\n    }\n  </style>\n\n  <a href=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059\" target=\"_self\">\n    <img class=\"image-mobile lazy-image loaded\" src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059\" data-src=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059\" data-srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 414w\" data-sizes=\"(max-width: 414px) 414px, 828px\" alt=\"\" width=\"1000\" height=\"1000\" loading=\"lazy\" decoding=\"async\" srcset=\"https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 828w,\n                     https://cdn.shopify.com/s/files/1/0976/6092/8339/files/ingredients_de_la_poudre_capillaire.webp?v=1753719059 414w\" sizes=\"(max-width: 414px) 414px, 828px\">\n  </a>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "before_after_image_QtLKh7": {
+      "type": "before-after-image",
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "AVANT/APRÈS",
+        "content": "",
+        "before_image": "shopify://shop_images/Cheveux_1_avant.webp",
+        "after_image": "shopify://shop_images/Cheveux_1_apres.webp",
+        "expand_image": false,
+        "text_position": "center",
+        "before_after_text_position": "bottom",
+        "before_text": "AVANT",
+        "after_text": "APRÈS",
+        "drag_initial_position": 50,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#ffffff",
+        "after_text_color": "#ffffff",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
+    },
+    "media_grid_ctg6dp": {
+      "type": "media-grid",
+      "blocks": {
+        "image_dGQ8Rp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Cheveux_3_avant.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_XRNLai": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Cheveux_3_apres.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_6tjFQL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Cheveux_2_avant.webp",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_DVyrdX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Cheveux_2_apres.webp",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_dGQ8Rp",
+        "image_XRNLai",
+        "image_6tjFQL",
+        "image_DVyrdX"
+      ],
+      "name": "Media grid",
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "rich_text_MMCPrq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ziX4ij": {
+          "type": "heading",
+          "settings": {
+            "text": "Redonnez à vos cheveux l'allure qu’ils méritent",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_ziX4ij"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "text_with_icons_H3Gidz": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_kH4Aq4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Cheveux volumineux immédiatement",
+            "content": "<p>En un instant, les zones clairsemées disparaissent pour laisser place à une chevelure dense et harmonieuse</p>"
+          }
+        },
+        "item_Nnghxg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Résistance à toute épreuve",
+            "content": "<p>Notre poudre capillaire est faite pour tenir face à l’eau, à l’humidité, à la transpiration et aux frottements pour une fixation fiable du matin jusqu’au soir</p>"
+          }
+        },
+        "item_Ke6TFE": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-leaf",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Effet densité naturel et indétectable",
+            "content": "<p>Les fibres se fondent parfaitement à vos cheveux pour un rendu naturel et réaliste. Une chevelure plus dense, obtenue grâce à une formule douce et composée d’ingrédients d’origine naturelle</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_kH4Aq4",
+        "item_Nnghxg",
+        "item_Ke6TFE"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multiple_images_with_text_GJQMjb": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_jxQnxi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Choisir_teinte_poudre_capillaire.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "",
+            "content": "<p><strong>Déjà + de 30 000 hommes convaincus !</strong><br/>Ils ont trouvé leur nuance idéale parmi nos 6 teintes testées et approuvées. Et vous, laquelle vous redonnera confiance en vous ?</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_jxQnxi"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "1757081486662fb42d": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_WGALck": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_WGALck"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "17570782403a620a38": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_QDwWH6": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_QDwWH6"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "175468758540b49798": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "meditrust_tableau_UiURp3": {
+      "type": "meditrust-tableau",
+      "blocks": {
+        "table_row_cRAQNE": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Fibres naturelles",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_qj9dm6": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Application express",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_d8bXMm": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Waterproof",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_kjThyd": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Frottement",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_FB8VTY": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Résultats visibles",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        },
+        "table_row_bejxUi": {
+          "type": "table_row",
+          "settings": {
+            "row_heading": "Miroir intégré",
+            "first_column": "",
+            "first_column_icon": "check",
+            "second_column": "",
+            "second_column_icon": "cross",
+            "third_column": "",
+            "third_column_icon": "none",
+            "four_column": "",
+            "four_column_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "table_row_cRAQNE",
+        "table_row_qj9dm6",
+        "table_row_d8bXMm",
+        "table_row_kjThyd",
+        "table_row_FB8VTY",
+        "table_row_bejxUi"
+      ],
+      "name": "Meditrust - Compare Table",
+      "settings": {
+        "selected_theme": "standard",
+        "body_gap": 32,
+        "body_gap_mobile": 32,
+        "content_horizontal_align": "start",
+        "content_horizontal_align_mobile": "center",
+        "heading": "<p><strong>NK Hair VS</strong> nos concurrents</p>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 52,
+        "heading_size_mobile": 32,
+        "heading_height": 150,
+        "text": "<p>Notre poudre capillaire se distingue par sa qualité irréprochable et ses résultats visibles. Comparez et vous comprendrez pourquoi elle surpasse les autres solutions...</p>",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 18,
+        "text_size_mobile": 18,
+        "text_height": 150,
+        "text_mt": 4,
+        "list_mt": 50,
+        "list_mt_mobile": 32,
+        "list_gap": 30,
+        "list_gap_mobile": 30,
+        "list_hide_mobile": true,
+        "icon_size": 28,
+        "icon_size_mobile": 28,
+        "icon_margin_right": 16,
+        "list_text_custom": false,
+        "list_text_font": "josefin_sans_n4",
+        "list_text_size": 20,
+        "list_text_size_mobile": 18,
+        "list_text_height": 150,
+        "button": "",
+        "button_url": "",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 18,
+        "button_size_mobile": 18,
+        "button_height": 100,
+        "button_width": 305,
+        "button_mt": 50,
+        "button_mt_mobile": 32,
+        "button_padding_vertical": 16,
+        "button_padding_vertical_mobile": 16,
+        "button_padding_horizontal": 48,
+        "button_padding_horizontal_mobile": 48,
+        "button_radius": 100,
+        "button_border_thickness": 0,
+        "button_style": "non_outline",
+        "button_position_mobile": "bottom",
+        "table_columns": 2,
+        "table_mt_mobile": 32,
+        "table_column_active": "1",
+        "table_radius": 16,
+        "table_border_thickness": 1,
+        "table_heading_image_size": 100,
+        "table_heading_image_size_mobile": 80,
+        "first_heading": "NK Hair",
+        "second_heading": "Autres marques",
+        "third_heading": "Troisième",
+        "four_heading": "Quatrième",
+        "table_heading_custom": false,
+        "table_heading_font": "assistant_n4",
+        "table_heading_size": 20,
+        "table_heading_size_mobile": 16,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 18,
+        "table_heading_padding_horizontal_mobile": 18,
+        "table_heading_padding_vertical": 18,
+        "table_heading_padding_vertical_mobile": 18,
+        "table_row_padding_horizontal": 14,
+        "table_row_padding_horizontal_mobile": 12,
+        "table_row_padding_vertical": 16,
+        "table_row_padding_vertical_mobile": 16,
+        "table_row_heading_width_mobile": 66,
+        "table_row_heading_custom": false,
+        "table_row_heading_font": "assistant_n4",
+        "table_row_heading_size": 16,
+        "table_row_heading_size_mobile": 16,
+        "table_row_heading_height": 130,
+        "table_row_heading_align": "left",
+        "table_row_text_custom": false,
+        "table_row_text_font": "assistant_n4",
+        "table_row_text_size": 20,
+        "table_row_text_size_mobile": 16,
+        "table_row_text_height": 130,
+        "table_row_text_align": "center",
+        "table_row_image_size": 24,
+        "table_row_image_size_mobile": 24,
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "icon_color": "#000000",
+        "list_text_color": "#000000",
+        "button_color": "#f0f0f0",
+        "button_hover_color": "#dad0ff",
+        "button_bg_color": "#16142b",
+        "button_bg_hover_color": "#16142b",
+        "button_border_color": "#16142b",
+        "button_border_hover_color": "#16142b",
+        "table_border_color": "#000000",
+        "table_active_border_color": "#000000",
+        "table_heading_color": "#000000",
+        "table_heading_active_color": "#f0f0f0",
+        "table_heading_bg_active_color": "#000000",
+        "table_column_active_bg_color": "#454545",
+        "table_row_heading_color": "#000000",
+        "table_row_text_color": "#000000",
+        "table_row_active_text_color": "#f0f0f0",
+        "background_color": "#f0f0f0",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 130,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17570598884f9a7a69",
+    "popup_image_block_ijR4Fk",
+    "custom_liquid_9gnc7W",
+    "faq_BkgFKL",
+    "custom_liquid_zcrypk",
+    "before_after_image_QtLKh7",
+    "media_grid_ctg6dp",
+    "rich_text_MMCPrq",
+    "text_with_icons_H3Gidz",
+    "multiple_images_with_text_GJQMjb",
+    "1757081486662fb42d",
+    "17570782403a620a38",
+    "175468758540b49798",
+    "meditrust_tableau_UiURp3"
+  ]
+}
