@@ -40,9 +40,9 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/Logo_Namilka_Store_5dc722ac-b556-40c0-93a3-72f15aa4b7a2.webp",
+        "logo": "shopify://shop_images/NK_logo_noir_trans.png",
         "logo_max_width": 190,
-        "logo_mobile_max_width": 130,
+        "logo_mobile_max_width": 85,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
