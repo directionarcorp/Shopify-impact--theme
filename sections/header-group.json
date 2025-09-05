@@ -42,7 +42,7 @@
         "hide_on_scroll": false,
         "logo": "shopify://shop_images/NK_logo_noir_trans.png",
         "logo_max_width": 110,
-        "logo_mobile_max_width": 85,
+        "logo_mobile_max_width": 80,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
