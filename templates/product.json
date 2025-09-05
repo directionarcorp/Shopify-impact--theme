@@ -79,6 +79,12 @@
             "payment_button_background": "#000000",
             "payment_button_text_color": ""
           }
+        },
+        "liquid_kWVWWF": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product and product.available %}\n  <div class=\"nk-dynamic-checkout-wrapper\">\n    {% form 'product', product, id: 'nk-dynamic-checkout', class: 'nk-dynamic-checkout' %}\n      <!-- on renseigne la variante sélectionnée -->\n      <input type=\"hidden\" name=\"id\" value=\"{{ product.selected_or_first_available_variant.id }}\">\n\n      {{ form | payment_button }}\n    {% endform %}\n  </div>\n\n  <style>\n    :root { --nk-btn-height: 52px; } /* Ajustez pour matcher \"Ajouter au panier\" */\n\n    .nk-dynamic-checkout .shopify-payment-button { width: 100%; }\n    .nk-dynamic-checkout .shopify-payment-button__button {\n      min-height: var(--nk-btn-height);\n      width: 100%;\n      border-radius: 10px;\n      padding: 0 16px;\n    }\n    .nk-dynamic-checkout .shopify-payment-button__more-options { display: none; } /* optionnel */\n  </style>\n\n  <script>\n    (function() {\n      // 1) essaie d’écouter l’événement (Dawn/Impact émettent souvent 'variant:change')\n      document.addEventListener('variant:change', function(e) {\n        try {\n          var newId = e && e.detail && e.detail.variant && e.detail.variant.id;\n          var hiddenInput = document.querySelector('#nk-dynamic-checkout input[name=\"id\"]');\n          if (newId && hiddenInput) hiddenInput.value = newId;\n        } catch (err) {}\n      }, { passive: true });\n\n      // 2) fallback : synchronise avec le champ variante du formulaire principal\n      var mainVariantInput = document.querySelector('form[action*=\"/cart/add\"] input[name=\"id\"]');\n      var myVariantInput   = document.querySelector('#nk-dynamic-checkout input[name=\"id\"]');\n\n      function syncVariant() {\n        if (mainVariantInput && myVariantInput && mainVariantInput.value) {\n          myVariantInput.value = mainVariantInput.value;\n        }\n      }\n\n      if (mainVariantInput && myVariantInput) {\n        ['change','input'].forEach(function(evt){\n          mainVariantInput.addEventListener(evt, syncVariant, { passive: true });\n        });\n\n        // MutationObserver pour mises à jour JS silencieuses\n        var mo = new MutationObserver(syncVariant);\n        mo.observe(mainVariantInput, { attributes: true, attributeFilter: ['value'] });\n        syncVariant();\n      }\n    })();\n  </script>\n{% endif %}"
+          }
         }
       },
       "block_order": [
@@ -91,7 +97,8 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "liquid_kWVWWF"
       ],
       "settings": {
         "full_width": true,
