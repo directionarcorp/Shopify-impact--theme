@@ -599,7 +599,7 @@
         "table_row_cRAQNE": {
           "type": "table_row",
           "settings": {
-            "row_heading": "100% naturel",
+            "row_heading": "Fibres naturelles",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -641,7 +641,7 @@
         "table_row_kjThyd": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Anti-frottement",
+            "row_heading": "Frottement",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
