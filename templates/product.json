@@ -107,6 +107,34 @@
         "input_text_color": ""
       }
     },
+    "17570596882807378c": {
+      "type": "apps",
+      "blocks": {
+        "essential_trust_badges_app_block_7hnXrG": {
+          "type": "shopify://apps/essential-trust-badges/blocks/app-block/0ff65b25-07e1-408e-950f-f54dd3d1751b",
+          "settings": {
+            "banner_display": "all",
+            "banner_id": "aaa4700e-1973-4d05-a645-0ed7a645f905"
+          }
+        }
+      },
+      "block_order": [
+        "essential_trust_badges_app_block_7hnXrG"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "popup_image_block_ijR4Fk": {
       "type": "popup-image-block",
       "name": "Bloc avec image popup",
@@ -734,6 +762,7 @@
   },
   "order": [
     "main",
+    "17570596882807378c",
     "popup_image_block_ijR4Fk",
     "custom_liquid_9gnc7W",
     "faq_BkgFKL",
