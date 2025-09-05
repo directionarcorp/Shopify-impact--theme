@@ -75,6 +75,13 @@
             "payment_button_background": "#000000",
             "payment_button_text_color": ""
           }
+        },
+        "essential_trust_badges_app_block_JcXqxJ": {
+          "type": "shopify://apps/essential-trust-badges/blocks/app-block/0ff65b25-07e1-408e-950f-f54dd3d1751b",
+          "settings": {
+            "banner_display": "all",
+            "banner_id": "aaa4700e-1973-4d05-a645-0ed7a645f905"
+          }
         }
       },
       "block_order": [
@@ -87,7 +94,8 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "essential_trust_badges_app_block_JcXqxJ"
       ],
       "settings": {
         "full_width": true,
@@ -107,10 +115,10 @@
         "input_text_color": ""
       }
     },
-    "17570596882807378c": {
+    "17570598884f9a7a69": {
       "type": "apps",
       "blocks": {
-        "essential_trust_badges_app_block_7hnXrG": {
+        "essential_trust_badges_app_block_QXifaQ": {
           "type": "shopify://apps/essential-trust-badges/blocks/app-block/0ff65b25-07e1-408e-950f-f54dd3d1751b",
           "settings": {
             "banner_display": "all",
@@ -119,7 +127,7 @@
         }
       },
       "block_order": [
-        "essential_trust_badges_app_block_7hnXrG"
+        "essential_trust_badges_app_block_QXifaQ"
       ],
       "settings": {
         "full_width": true,
@@ -762,7 +770,7 @@
   },
   "order": [
     "main",
-    "17570596882807378c",
+    "17570598884f9a7a69",
     "popup_image_block_ijR4Fk",
     "custom_liquid_9gnc7W",
     "faq_BkgFKL",
