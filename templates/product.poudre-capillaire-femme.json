@@ -27,7 +27,6 @@
         "image_ACN3eq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Avantages_de_notre_poudre_capillaire.webp",
             "alignment": "start",
             "max_width": 320
           }
@@ -107,7 +106,6 @@
       "settings": {
         "text_line_1": "Vous ne savez pas quelle teinte choisir ?",
         "text_line_2": "Cliquez ici pour trouver votre teinte",
-        "image": "shopify://shop_images/Incertaine_sur_la_couleur.webp",
         "link_color": "#1a1a1a",
         "background_color": "#f8f8f8",
         "border_radius": 12,
@@ -245,8 +243,6 @@
         "subheading": "",
         "title": "AVANT/APRÈS",
         "content": "",
-        "before_image": "shopify://shop_images/Test_poudre_sur_femme_avant_c10190fc-b890-4476-ab38-71a17559adef.webp",
-        "after_image": "shopify://shop_images/Test_poudre_sur_femme_apres_ffcd2c26-3485-4f81-95e1-8f40078d4e9c.webp",
         "expand_image": false,
         "text_position": "center",
         "before_after_text_position": "bottom",
@@ -268,7 +264,6 @@
         "image_dGQ8Rp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Avant_apres_1.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -290,7 +285,6 @@
         "image_XRNLai": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/avant_Apres_1_2.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -453,7 +447,6 @@
         "item_jxQnxi": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Incertaine_sur_la_couleur.webp",
             "image_rotation_degrees": -2,
             "subheading": "",
             "title": "",
@@ -494,14 +487,33 @@
     },
     "1754858949ee3b842b": {
       "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "175708187091150745": {
+      "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_9XKgNb": {
+        "judge_me_reviews_review_widget_PhWjyt": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_9XKgNb"
+        "judge_me_reviews_review_widget_PhWjyt"
       ],
       "settings": {
         "full_width": true,
@@ -523,7 +535,6 @@
         "item_CB9irB": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Image_experte_1.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Camille Dupuis",
@@ -533,7 +544,6 @@
         "item_rXBkEh": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Image_experte_3.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Laura Marchand",
@@ -543,7 +553,6 @@
         "item_dcyxDw": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Image_experte_4.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Élise Caron",
@@ -553,7 +562,6 @@
         "item_fWy68R": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Image_experte_2.webp",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Anaïs Lefèvre",
@@ -691,7 +699,6 @@
         "heading_size_mobile": 32,
         "heading_height": 150,
         "text": "<p>Nous sommes fiers de la qualité de notre poudre capillaire, nous ne pouvons pas en dire autant des autres…</p>",
-        "custom_image": "shopify://shop_images/Pot_de_poudre_capillaire_1f074731-5c2b-4aab-8dfd-bfb5bcdfec02.webp",
         "text_custom": false,
         "text_font": "josefin_sans_n4",
         "text_size": 18,
@@ -809,7 +816,6 @@
         "image_yB4g9P": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Femme_qui_tient_pot_de_poudre_capillaire.webp",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -853,6 +859,7 @@
     "multiple_images_with_text_GJQMjb",
     "custom_liquid_8q86TC",
     "1754858949ee3b842b",
+    "175708187091150745",
     "images_with_text_scrolling_TEQwwD",
     "meditrust_tableau_UiURp3",
     "media_with_text_yKiHja"
