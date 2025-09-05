@@ -604,7 +604,7 @@
         "table_row_cRAQNE": {
           "type": "table_row",
           "settings": {
-            "row_heading": "100% naturel",
+            "row_heading": "Fibres naturelles",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -615,10 +615,10 @@
             "four_column_icon": "none"
           }
         },
-        "table_row_FB8VTY": {
+        "table_row_qj9dm6": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Résultats visibles",
+            "row_heading": "Application express",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -657,10 +657,10 @@
             "four_column_icon": "none"
           }
         },
-        "table_row_qj9dm6": {
+        "table_row_FB8VTY": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Application rapide",
+            "row_heading": "Résultats visibles",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -688,10 +688,10 @@
       },
       "block_order": [
         "table_row_cRAQNE",
-        "table_row_FB8VTY",
+        "table_row_qj9dm6",
         "table_row_d8bXMm",
         "table_row_kjThyd",
-        "table_row_qj9dm6",
+        "table_row_FB8VTY",
         "table_row_bejxUi"
       ],
       "name": "Meditrust - Compare Table",
