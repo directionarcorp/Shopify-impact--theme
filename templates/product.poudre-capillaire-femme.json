@@ -267,6 +267,7 @@
         "image_dGQ8Rp": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Photos_avis_femme_3.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
